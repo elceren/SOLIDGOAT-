@@ -43,6 +43,12 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
         default=[],
         help="Optional relative path inside the repository to restrict detection scope.",
     )
+    parser.add_argument(
+        "--max-violations",
+        type=int,
+        default=None,
+        help="Stop detection after this many violations are found.",
+    )
     return parser.parse_args(argv)
 
 
@@ -66,7 +72,7 @@ def main(argv: list[str] | None = None) -> int:
     refactor_budget = max(args.max_refactors, 0)
 
     for principle in principles:
-        issues = detect_violations(repository_path, principle=principle, scan_roots=scan_roots)
+        issues = detect_violations(repository_path, principle=principle, scan_roots=scan_roots, max_violations=args.max_violations)
         write_json(run_dir / f"detections_{principle}.json", issues)
         duplicates = sum(1 for issue in issues if registry.is_duplicate(issue))
         new_count = len(issues) - duplicates

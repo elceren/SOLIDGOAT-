@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Union
 
 from config import IGNORED_DIRECTORIES, SUPPORTED_EXTENSIONS
-from core.llm import call_llm
+from core.llm import call_llm_batch
 from utils.file_loader import read_text_file
 
 
@@ -21,29 +21,6 @@ def _sanitize_source(source: str) -> str:
         lines.pop(0)
     return "\n".join(lines)
 
-
-def _build_prompt(
-    file_path: Path,
-    class_name: str,
-    method_name: str,
-    symbol_name: str,
-    line_range: str,
-    principle: str,
-    source: str,
-) -> str:
-    return "\n".join(
-        [
-            "Analyze this Python code for a SOLID design principle violation.",
-            f"file: {file_path}",
-            f"class: {class_name}",
-            f"method: {method_name}",
-            f"symbol_name: {symbol_name}",
-            f"line_range: {line_range}",
-            f"principle: {principle}",
-            "source:",
-            source,
-        ]
-    )
 
 
 def _public_methods(node: ast.ClassDef) -> List[ast.FunctionDef]:
@@ -66,19 +43,6 @@ def _iter_conditionals(node: ast.AST) -> Iterable[ast.If]:
             yield child
 
 
-def _record_issue(
-    issues: List[Dict[str, object]],
-    file_path: Path,
-    class_name: str,
-    method_name: str,
-    symbol_name: str,
-    line_range: str,
-    principle: str,
-    source: str,
-) -> None:
-    prompt = _build_prompt(file_path, class_name, method_name, symbol_name, line_range, principle, source)
-    issues.append(call_llm(prompt))
-
 
 def _line_range(node: ast.AST) -> str:
     start = getattr(node, "lineno", 1)
@@ -92,7 +56,7 @@ def _detect_srp(tree: ast.AST) -> List[IssueCandidate]:
     for node in tree.body:
         if isinstance(node, ast.ClassDef):
             public_methods = _public_methods(node)
-            if len(public_methods) >= 4:
+            if len(public_methods) >= 6:
                 method = public_methods[0]
                 candidates.append(
                     {
@@ -245,8 +209,13 @@ def detect_violations(
     repository_path: Path,
     principle: str | None = None,
     scan_roots: List[Path] | None = None,
+    max_violations: int | None = None,
 ) -> List[Dict[str, object]]:
+    import time
     issues: List[Dict[str, object]] = []
+    files_scanned = 0
+    candidates_found = 0
+    t_total = time.monotonic()
 
     roots = scan_roots or [repository_path]
     for root in roots:
@@ -262,20 +231,51 @@ def detect_violations(
             try:
                 tree = ast.parse(analysis_source)
             except SyntaxError:
+                print(f"  [detector] skipping {file_path.name} — SyntaxError", flush=True)
                 continue
 
-            for candidate in _collect_candidates(tree):
-                if principle is not None and str(candidate["principle"]) != principle:
-                    continue
-                _record_issue(
-                    issues,
-                    file_path=file_path,
-                    class_name=str(candidate["class"]),
-                    method_name=str(candidate["method"]),
-                    symbol_name=str(candidate["symbol_name"]),
-                    line_range=str(candidate["line_range"]),
-                    principle=str(candidate["principle"]),
-                    source=analysis_source,
+            files_scanned += 1
+            file_candidates = [
+                c for c in _collect_candidates(tree)
+                if principle is None or str(c["principle"]) == principle
+            ]
+
+            if file_candidates:
+                print(
+                    f"  [detector] {file_path.name} — "
+                    f"{len(file_candidates)} candidate(s): "
+                    f"{[c['symbol_name'] for c in file_candidates]}",
+                    flush=True,
                 )
 
+            if file_candidates:
+                remaining = (
+                    max_violations - len(issues)
+                    if max_violations is not None
+                    else len(file_candidates)
+                )
+                batch = file_candidates[:remaining]
+                candidates_found += len(batch)
+                t_issue = time.monotonic()
+                results = call_llm_batch(file_path, batch, analysis_source)
+                print(
+                    f"  [detector] {len(results)} issue(s) recorded in {time.monotonic() - t_issue:.2f}s "
+                    f"(total so far: {len(issues) + len(results)})",
+                    flush=True,
+                )
+                issues.extend(results)
+
+            if max_violations is not None and len(issues) >= max_violations:
+                break
+
+        if max_violations is not None and len(issues) >= max_violations:
+            print(f"  [detector] reached max_violations={max_violations} — stopping early", flush=True)
+            break
+
+    print(
+        f"  [detector] done — {files_scanned} files scanned, "
+        f"{candidates_found} candidates, {len(issues)} issues recorded "
+        f"in {time.monotonic() - t_total:.1f}s",
+        flush=True,
+    )
     return issues
