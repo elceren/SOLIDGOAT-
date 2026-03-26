@@ -18,5 +18,25 @@
     "principle": "OCP",
     "reasoning": "Mock LLM flagged `_load` in `IssueRegistry` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
     "symbol_name": "IssueRegistry._load"
+  },
+  {
+    "class": "AbstractDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L331-L333",
+    "method": "get_child_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `get_child_store` in `AbstractDataStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractDataStore.get_child_store"
+  },
+  {
+    "class": "AbstractWritableDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L437-L470",
+    "method": "encode",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `encode` in `AbstractWritableDataStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractWritableDataStore.encode"
   }
 ]

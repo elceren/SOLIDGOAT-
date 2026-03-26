@@ -1,0 +1,92 @@
+[
+  {
+    "class": "AbstractDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L331-L333",
+    "method": "get_child_store",
+    "principle": "ISP",
+    "reasoning": "Mock LLM flagged `get_child_store` in `AbstractDataStore` as a potential ISP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractDataStore.get_child_store"
+  },
+  {
+    "class": "AbstractWritableDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L437-L470",
+    "method": "encode",
+    "principle": "ISP",
+    "reasoning": "Mock LLM flagged `encode` in `AbstractWritableDataStore` as a potential ISP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractWritableDataStore.encode"
+  },
+  {
+    "class": "AbstractCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L66-L67",
+    "method": "dims",
+    "principle": "ISP",
+    "reasoning": "Mock LLM flagged `dims` in `AbstractCoordinates` as a potential ISP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractCoordinates.dims"
+  },
+  {
+    "class": "GroupBy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L699-L712",
+    "method": "sizes",
+    "principle": "ISP",
+    "reasoning": "Mock LLM flagged `sizes` in `GroupBy` as a potential ISP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "GroupBy.sizes"
+  },
+  {
+    "class": "Index",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L67-L96",
+    "method": "from_variables",
+    "principle": "ISP",
+    "reasoning": "Mock LLM flagged `from_variables` in `Index` as a potential ISP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Index.from_variables"
+  },
+  {
+    "class": "ChunkManagerEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/parallelcompat.py",
+    "line_range": "L220-L238",
+    "method": "is_chunked_array",
+    "principle": "ISP",
+    "reasoning": "Mock LLM flagged `is_chunked_array` in `ChunkManagerEntrypoint` as a potential ISP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ChunkManagerEntrypoint.is_chunked_array"
+  },
+  {
+    "class": "TestNetCDF4ViaDaskData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2583-L2594",
+    "method": "roundtrip",
+    "principle": "ISP",
+    "reasoning": "Mock LLM flagged `roundtrip` in `TestNetCDF4ViaDaskData` as a potential ISP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNetCDF4ViaDaskData.roundtrip"
+  },
+  {
+    "class": "TestDask",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L5884-L5885",
+    "method": "create_store",
+    "principle": "ISP",
+    "reasoning": "Mock LLM flagged `create_store` in `TestDask` as a potential ISP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDask.create_store"
+  },
+  {
+    "class": "TestCFEncodedDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_conventions.py",
+    "line_range": "L588-L589",
+    "method": "create_store",
+    "principle": "ISP",
+    "reasoning": "Mock LLM flagged `create_store` in `TestCFEncodedDataStore` as a potential ISP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCFEncodedDataStore.create_store"
+  }
+]

@@ -1,0 +1,1512 @@
+[
+  {
+    "class": "ArrayWriter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L398-L406",
+    "method": "add",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `add` in `ArrayWriter` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ArrayWriter.add"
+  },
+  {
+    "class": "AbstractWritableDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L580-L613",
+    "method": "set_dimensions",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `set_dimensions` in `AbstractWritableDataStore` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractWritableDataStore.set_dimensions"
+  },
+  {
+    "class": "BackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L769-L775",
+    "method": "__repr__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__repr__` in `BackendEntrypoint` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BackendEntrypoint.__repr__"
+  },
+  {
+    "class": "CachingFileManager",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/file_manager.py",
+    "line_range": "L86-L164",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `CachingFileManager` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CachingFileManager.__init__"
+  },
+  {
+    "class": "PickleableFileManager",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/file_manager.py",
+    "line_range": "L395-L408",
+    "method": "close",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `close` in `PickleableFileManager` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PickleableFileManager.close"
+  },
+  {
+    "class": "H5NetCDFStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/h5netcdf_.py",
+    "line_range": "L124-L155",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `H5NetCDFStore` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "H5NetCDFStore.__init__"
+  },
+  {
+    "class": "H5netcdfBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/h5netcdf_.py",
+    "line_range": "L512-L528",
+    "method": "guess_can_open",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `guess_can_open` in `H5netcdfBackendEntrypoint` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "H5netcdfBackendEntrypoint.guess_can_open"
+  },
+  {
+    "class": "LRUCache",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/lru_cache.py",
+    "line_range": "L34-L51",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `LRUCache` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "LRUCache.__init__"
+  },
+  {
+    "class": "NetCDF4DataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/netCDF4_.py",
+    "line_range": "L409-L433",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `NetCDF4DataStore` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDF4DataStore.__init__"
+  },
+  {
+    "class": "NetCDF4BackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/netCDF4_.py",
+    "line_range": "L708-L747",
+    "method": "guess_can_open",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `guess_can_open` in `NetCDF4BackendEntrypoint` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDF4BackendEntrypoint.guess_can_open"
+  },
+  {
+    "class": "PydapDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/pydap_.py",
+    "line_range": "L104-L152",
+    "method": "open",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `open` in `PydapDataStore` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PydapDataStore.open"
+  },
+  {
+    "class": "PydapBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/pydap_.py",
+    "line_range": "L343-L441",
+    "method": "open_groups_as_dict",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `open_groups_as_dict` in `PydapBackendEntrypoint` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PydapBackendEntrypoint.open_groups_as_dict"
+  },
+  {
+    "class": "ScipyDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/scipy_.py",
+    "line_range": "L183-L231",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `ScipyDataStore` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyDataStore.__init__"
+  },
+  {
+    "class": "ScipyBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/scipy_.py",
+    "line_range": "L353-L378",
+    "method": "guess_can_open",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `guess_can_open` in `ScipyBackendEntrypoint` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyBackendEntrypoint.guess_can_open"
+  },
+  {
+    "class": "FillValueCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/zarr.py",
+    "line_range": "L125-L141",
+    "method": "encode",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `encode` in `FillValueCoder` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "FillValueCoder.encode"
+  },
+  {
+    "class": "ZarrArrayWrapper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/zarr.py",
+    "line_range": "L259-L269",
+    "method": "__getitem__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `ZarrArrayWrapper` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrArrayWrapper.__getitem__"
+  },
+  {
+    "class": "ZarrStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/zarr.py",
+    "line_range": "L750-L794",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `ZarrStore` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrStore.__init__"
+  },
+  {
+    "class": "ZarrBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/zarr.py",
+    "line_range": "L1754-L1815",
+    "method": "open_groups_as_dict",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `open_groups_as_dict` in `ZarrBackendEntrypoint` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrBackendEntrypoint.open_groups_as_dict"
+  },
+  {
+    "class": "BaseCFTimeOffset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftime_offsets.py",
+    "line_range": "L135-L146",
+    "method": "__sub__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__sub__` in `BaseCFTimeOffset` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BaseCFTimeOffset.__sub__"
+  },
+  {
+    "class": "Tick",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftime_offsets.py",
+    "line_range": "L203-L215",
+    "method": "_next_higher_resolution",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_next_higher_resolution` in `Tick` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Tick._next_higher_resolution"
+  },
+  {
+    "class": "QuarterOffset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftime_offsets.py",
+    "line_range": "L449-L459",
+    "method": "__sub__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__sub__` in `QuarterOffset` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "QuarterOffset.__sub__"
+  },
+  {
+    "class": "YearOffset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftime_offsets.py",
+    "line_range": "L537-L548",
+    "method": "__sub__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__sub__` in `YearOffset` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "YearOffset.__sub__"
+  },
+  {
+    "class": "CFTimeIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftimeindex.py",
+    "line_range": "L271-L310",
+    "method": "__repr__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__repr__` in `CFTimeIndex` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFTimeIndex.__repr__"
+  },
+  {
+    "class": "_CFTimeFrequencyInferer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/frequencies.py",
+    "line_range": "L123-L152",
+    "method": "get_freq",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `get_freq` in `_CFTimeFrequencyInferer` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "_CFTimeFrequencyInferer.get_freq"
+  },
+  {
+    "class": "EncodedStringCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/strings.py",
+    "line_range": "L56-L88",
+    "method": "encode",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `encode` in `EncodedStringCoder` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "EncodedStringCoder.encode"
+  },
+  {
+    "class": "CFDatetimeCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/times.py",
+    "line_range": "L1383-L1405",
+    "method": "encode",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `encode` in `CFDatetimeCoder` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFDatetimeCoder.encode"
+  },
+  {
+    "class": "CFTimedeltaCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/times.py",
+    "line_range": "L1502-L1522",
+    "method": "encode",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `encode` in `CFTimedeltaCoder` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFTimedeltaCoder.encode"
+  },
+  {
+    "class": "CFMaskCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L280-L371",
+    "method": "encode",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `encode` in `CFMaskCoder` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFMaskCoder.encode"
+  },
+  {
+    "class": "CFScaleOffsetCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L508-L524",
+    "method": "encode",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `encode` in `CFScaleOffsetCoder` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFScaleOffsetCoder.encode"
+  },
+  {
+    "class": "NonStringCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L629-L654",
+    "method": "encode",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `encode` in `NonStringCoder` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NonStringCoder.encode"
+  },
+  {
+    "class": "_UFuncSignature",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/apply_ufunc.py",
+    "line_range": "L153-L188",
+    "method": "to_gufunc_string",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `to_gufunc_string` in `_UFuncSignature` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "_UFuncSignature.to_gufunc_string"
+  },
+  {
+    "class": "SupportsArithmetic",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/arithmetic.py",
+    "line_range": "L44-L95",
+    "method": "__array_ufunc__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__array_ufunc__` in `SupportsArithmetic` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "SupportsArithmetic.__array_ufunc__"
+  },
+  {
+    "class": "Rolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L75-L129",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `Rolling` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Rolling.__init__"
+  },
+  {
+    "class": "DataArrayRolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L425-L475",
+    "method": "_construct",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_construct` in `DataArrayRolling` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayRolling._construct"
+  },
+  {
+    "class": "DatasetRolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L776-L828",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `DatasetRolling` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetRolling.__init__"
+  },
+  {
+    "class": "Coarsen",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L1047-L1096",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `Coarsen` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Coarsen.__init__"
+  },
+  {
+    "class": "DataArrayCoarsen",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L1227-L1267",
+    "method": "_reduce_method",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_reduce_method` in `DataArrayCoarsen` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayCoarsen._reduce_method"
+  },
+  {
+    "class": "DatasetCoarsen",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L1314-L1363",
+    "method": "_reduce_method",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_reduce_method` in `DatasetCoarsen` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetCoarsen._reduce_method"
+  },
+  {
+    "class": "RollingExp",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling_exp.py",
+    "line_range": "L71-L92",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `RollingExp` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "RollingExp.__init__"
+  },
+  {
+    "class": "Weighted",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/weighted.py",
+    "line_range": "L149-L193",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `Weighted` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Weighted.__init__"
+  },
+  {
+    "class": "CombinedDatetimelikeAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/accessor_dt.py",
+    "line_range": "L654-L674",
+    "method": "__new__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__new__` in `CombinedDatetimelikeAccessor` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CombinedDatetimelikeAccessor.__new__"
+  },
+  {
+    "class": "StringAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/accessor_str.py",
+    "line_range": "L243-L281",
+    "method": "_re_compile",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_re_compile` in `StringAccessor` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "StringAccessor._re_compile"
+  },
+  {
+    "class": "AbstractArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/common.py",
+    "line_range": "L166-L181",
+    "method": "__array__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__array__` in `AbstractArray` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractArray.__array__"
+  },
+  {
+    "class": "AttrAccessMixin",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/common.py",
+    "line_range": "L271-L287",
+    "method": "__init_subclass__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init_subclass__` in `AttrAccessMixin` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AttrAccessMixin.__init_subclass__"
+  },
+  {
+    "class": "DataWithCoords",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/common.py",
+    "line_range": "L738-L872",
+    "method": "pipe",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `pipe` in `DataWithCoords` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataWithCoords.pipe"
+  },
+  {
+    "class": "AbstractCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L121-L199",
+    "method": "to_index",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `to_index` in `AbstractCoordinates` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractCoordinates.to_index"
+  },
+  {
+    "class": "Coordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L292-L355",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `Coordinates` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Coordinates.__init__"
+  },
+  {
+    "class": "DataArrayCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L1146-L1155",
+    "method": "__delitem__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__delitem__` in `DataArrayCoordinates` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayCoordinates.__delitem__"
+  },
+  {
+    "class": "DataArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/dataarray.py",
+    "line_range": "L416-L478",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `DataArray` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArray.__init__"
+  },
+  {
+    "class": "Dataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/dataset.py",
+    "line_range": "L378-L410",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `Dataset` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Dataset.__init__"
+  },
+  {
+    "class": "DatasetView",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/datatree.py",
+    "line_range": "L326-L352",
+    "method": "_construct_direct",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_construct_direct` in `DatasetView` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetView._construct_direct"
+  },
+  {
+    "class": "DataTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/datatree.py",
+    "line_range": "L598-L611",
+    "method": "_resolve_inherit",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_resolve_inherit` in `DataTree` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataTree._resolve_inherit"
+  },
+  {
+    "class": "RenderDataTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/datatree_render.py",
+    "line_range": "L80-L188",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `RenderDataTree` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "RenderDataTree.__init__"
+  },
+  {
+    "class": "LogicalOperatorTransformer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/eval.py",
+    "line_range": "L67-L83",
+    "method": "visit_BoolOp",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `visit_BoolOp` in `LogicalOperatorTransformer` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "LogicalOperatorTransformer.visit_BoolOp"
+  },
+  {
+    "class": "PandasExtensionArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/extension_array.py",
+    "line_range": "L250-L260",
+    "method": "__post_init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__post_init__` in `PandasExtensionArray` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasExtensionArray.__post_init__"
+  },
+  {
+    "class": "ResolvedGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L322-L367",
+    "method": "__post_init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__post_init__` in `ResolvedGrouper` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ResolvedGrouper.__post_init__"
+  },
+  {
+    "class": "ComposedGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L523-L576",
+    "method": "factorize",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `factorize` in `ComposedGrouper` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ComposedGrouper.factorize"
+  },
+  {
+    "class": "GroupBy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L638-L696",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `GroupBy` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "GroupBy.__init__"
+  },
+  {
+    "class": "DataArrayGroupByBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L1544-L1559",
+    "method": "_restore_dim_order",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_restore_dim_order` in `DataArrayGroupByBase` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayGroupByBase._restore_dim_order"
+  },
+  {
+    "class": "DatasetGroupByBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L1819-L1885",
+    "method": "reduce",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `reduce` in `DatasetGroupByBase` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetGroupByBase.reduce"
+  },
+  {
+    "class": "PandasIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L660-L688",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `PandasIndex` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasIndex.__init__"
+  },
+  {
+    "class": "PandasMultiIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1030-L1048",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `PandasMultiIndex` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasMultiIndex.__init__"
+  },
+  {
+    "class": "CoordinateTransformIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1532-L1594",
+    "method": "sel",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `sel` in `CoordinateTransformIndex` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CoordinateTransformIndex.sel"
+  },
+  {
+    "class": "Indexes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1705-L1749",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `Indexes` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Indexes.__init__"
+  },
+  {
+    "class": "BasicIndexer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L487-L503",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `BasicIndexer` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BasicIndexer.__init__"
+  },
+  {
+    "class": "OuterIndexer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L517-L547",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `OuterIndexer` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "OuterIndexer.__init__"
+  },
+  {
+    "class": "VectorizedIndexer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L562-L591",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `VectorizedIndexer` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "VectorizedIndexer.__init__"
+  },
+  {
+    "class": "LazilyIndexedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L712-L739",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `LazilyIndexedArray` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "LazilyIndexedArray.__init__"
+  },
+  {
+    "class": "LazilyVectorizedIndexedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L824-L836",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `LazilyVectorizedIndexedArray` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "LazilyVectorizedIndexedArray.__init__"
+  },
+  {
+    "class": "DaskIndexingAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L1844-L1873",
+    "method": "_vindex_get",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_vindex_get` in `DaskIndexingAdapter` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DaskIndexingAdapter._vindex_get"
+  },
+  {
+    "class": "PandasIndexingAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L1906-L1926",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `PandasIndexingAdapter` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasIndexingAdapter.__init__"
+  },
+  {
+    "class": "NumpyInterpolator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/missing.py",
+    "line_range": "L100-L124",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `NumpyInterpolator` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NumpyInterpolator.__init__"
+  },
+  {
+    "class": "ScipyInterpolator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/missing.py",
+    "line_range": "L145-L196",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `ScipyInterpolator` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyInterpolator.__init__"
+  },
+  {
+    "class": "SplineInterpolator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/missing.py",
+    "line_range": "L207-L230",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `SplineInterpolator` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "SplineInterpolator.__init__"
+  },
+  {
+    "class": "set_options",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/options.py",
+    "line_range": "L348-L368",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `set_options` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "set_options.__init__"
+  },
+  {
+    "class": "DataArrayResample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/resample.py",
+    "line_range": "L305-L366",
+    "method": "map",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `map` in `DataArrayResample` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayResample.map"
+  },
+  {
+    "class": "DatasetResample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/resample.py",
+    "line_range": "L400-L449",
+    "method": "map",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `map` in `DatasetResample` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetResample.map"
+  },
+  {
+    "class": "CFTimeGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/resample_cftime.py",
+    "line_range": "L78-L142",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `CFTimeGrouper` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFTimeGrouper.__init__"
+  },
+  {
+    "class": "NodePath",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/treenode.py",
+    "line_range": "L27-L38",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `NodePath` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NodePath.__init__"
+  },
+  {
+    "class": "TreeNode",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/treenode.py",
+    "line_range": "L96-L111",
+    "method": "_set_parent",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_set_parent` in `TreeNode` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TreeNode._set_parent"
+  },
+  {
+    "class": "NamedNode",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/treenode.py",
+    "line_range": "L742-L761",
+    "method": "relative_to",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `relative_to` in `NamedNode` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NamedNode.relative_to"
+  },
+  {
+    "class": "Variable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/variable.py",
+    "line_range": "L406-L423",
+    "method": "_new",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_new` in `Variable` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Variable._new"
+  },
+  {
+    "class": "IndexVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/variable.py",
+    "line_range": "L2752-L2759",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `IndexVariable` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "IndexVariable.__init__"
+  },
+  {
+    "class": "EncodedGroups",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L103-L150",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `EncodedGroups` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "EncodedGroups.__init__"
+  },
+  {
+    "class": "UniqueGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L227-L234",
+    "method": "group_as_index",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `group_as_index` in `UniqueGrouper` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "UniqueGrouper.group_as_index"
+  },
+  {
+    "class": "BinGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L424-L470",
+    "method": "factorize",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `factorize` in `BinGrouper` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BinGrouper.factorize"
+  },
+  {
+    "class": "TimeResampler",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L520-L551",
+    "method": "_init_properties",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_init_properties` in `TimeResampler` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TimeResampler._init_properties"
+  },
+  {
+    "class": "SeasonGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L829-L867",
+    "method": "factorize",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `factorize` in `SeasonGrouper` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "SeasonGrouper.factorize"
+  },
+  {
+    "class": "SeasonResampler",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L901-L914",
+    "method": "__post_init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__post_init__` in `SeasonResampler` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "SeasonResampler.__post_init__"
+  },
+  {
+    "class": "NDPointIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/nd_point_index.py",
+    "line_range": "L253-L280",
+    "method": "from_variables",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `from_variables` in `NDPointIndex` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NDPointIndex.from_variables"
+  },
+  {
+    "class": "RangeCoordinateTransform",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/range_index.py",
+    "line_range": "L58-L65",
+    "method": "step",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `step` in `RangeCoordinateTransform` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "RangeCoordinateTransform.step"
+  },
+  {
+    "class": "RangeIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/range_index.py",
+    "line_range": "L194-L285",
+    "method": "arange",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `arange` in `RangeIndex` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "RangeIndex.arange"
+  },
+  {
+    "class": "NamedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/core.py",
+    "line_range": "L346-L364",
+    "method": "_copy",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_copy` in `NamedArray` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NamedArray._copy"
+  },
+  {
+    "class": "DaskManager",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/daskmanager.py",
+    "line_range": "L253-L266",
+    "method": "shuffle",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `shuffle` in `DaskManager` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DaskManager.shuffle"
+  },
+  {
+    "class": "DuckArrayModule",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/pycompat.py",
+    "line_range": "L34-L66",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `DuckArrayModule` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DuckArrayModule.__init__"
+  },
+  {
+    "class": "FacetGrid",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/plot/facetgrid.py",
+    "line_range": "L127-L278",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `FacetGrid` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "FacetGrid.__init__"
+  },
+  {
+    "class": "_Normalize",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/plot/utils.py",
+    "line_range": "L1461-L1478",
+    "method": "_calc_widths",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_calc_widths` in `_Normalize` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "_Normalize._calc_widths"
+  },
+  {
+    "class": "Aligner",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/structure/alignment.py",
+    "line_range": "L179-L231",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `Aligner` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Aligner.__init__"
+  },
+  {
+    "class": "ConcatenatableArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/arrays.py",
+    "line_range": "L186-L197",
+    "method": "__getitem__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `ConcatenatableArray` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ConcatenatableArray.__getitem__"
+  },
+  {
+    "class": "XYIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/indexes.py",
+    "line_range": "L49-L66",
+    "method": "concat",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `concat` in `XYIndex` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "XYIndex.concat"
+  },
+  {
+    "class": "TestDatetimeAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_accessor_dt.py",
+    "line_range": "L76-L105",
+    "method": "test_field_access",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_field_access` in `TestDatetimeAccessor` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatetimeAccessor.test_field_access"
+  },
+  {
+    "class": "DatasetIOBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L458-L469",
+    "method": "roundtrip",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `roundtrip` in `DatasetIOBase` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetIOBase.roundtrip"
+  },
+  {
+    "class": "CFEncodedBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L1106-L1121",
+    "method": "test_roundtrip_empty_vlen_string_array",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_roundtrip_empty_vlen_string_array` in `CFEncodedBase` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFEncodedBase.test_roundtrip_empty_vlen_string_array"
+  },
+  {
+    "class": "NetCDF4Base",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2139-L2169",
+    "method": "test_encoding_enum__no_fill_value",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_encoding_enum__no_fill_value` in `NetCDF4Base` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDF4Base.test_encoding_enum__no_fill_value"
+  },
+  {
+    "class": "TestNetCDF4Data",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2394-L2444",
+    "method": "test_compression_encoding",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_compression_encoding` in `TestNetCDF4Data` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNetCDF4Data.test_compression_encoding"
+  },
+  {
+    "class": "TestNetCDF4ViaDaskData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2583-L2594",
+    "method": "roundtrip",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `roundtrip` in `TestNetCDF4ViaDaskData` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNetCDF4ViaDaskData.roundtrip"
+  },
+  {
+    "class": "ZarrBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2689-L2699",
+    "method": "roundtrip",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `roundtrip` in `ZarrBase` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrBase.roundtrip"
+  },
+  {
+    "class": "TestInstrumentedZarrStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L3893-L3903",
+    "method": "create_zarr_target",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `create_zarr_target` in `TestInstrumentedZarrStore` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestInstrumentedZarrStore.create_zarr_target"
+  },
+  {
+    "class": "TestZarrWriteEmpty",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L4443-L4460",
+    "method": "roundtrip_dir",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `roundtrip_dir` in `TestZarrWriteEmpty` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestZarrWriteEmpty.roundtrip_dir"
+  },
+  {
+    "class": "TestScipyInMemoryData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L4661-L4670",
+    "method": "roundtrip",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `roundtrip` in `TestScipyInMemoryData` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestScipyInMemoryData.roundtrip"
+  },
+  {
+    "class": "TestScipyFileObject",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L4690-L4702",
+    "method": "roundtrip",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `roundtrip` in `TestScipyFileObject` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestScipyFileObject.roundtrip"
+  },
+  {
+    "class": "TestGenericNetCDFData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L4898-L4919",
+    "method": "test_cross_engine_read_write_netcdf3",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_cross_engine_read_write_netcdf3` in `TestGenericNetCDFData` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestGenericNetCDFData.test_cross_engine_read_write_netcdf3"
+  },
+  {
+    "class": "TestH5NetCDFViaDaskData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L5291-L5302",
+    "method": "roundtrip",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `roundtrip` in `TestH5NetCDFViaDaskData` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestH5NetCDFViaDaskData.roundtrip"
+  },
+  {
+    "class": "TestNCZarr",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L7595-L7610",
+    "method": "_create_nczarr",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_create_nczarr` in `TestNCZarr` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNCZarr._create_nczarr"
+  },
+  {
+    "class": "TestZarrDatatreeIO",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends_datatree.py",
+    "line_range": "L697-L732",
+    "method": "test_zarr_encoding",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_zarr_encoding` in `TestZarrDatatreeIO` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestZarrDatatreeIO.test_zarr_encoding"
+  },
+  {
+    "class": "TestNestedCombine",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L703-L731",
+    "method": "test_combine_nested_fill_value",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_combine_nested_fill_value` in `TestNestedCombine` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNestedCombine.test_combine_nested_fill_value"
+  },
+  {
+    "class": "TestConcatDataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_concat.py",
+    "line_range": "L1025-L1049",
+    "method": "test_concat_fill_value",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_concat_fill_value` in `TestConcatDataset` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestConcatDataset.test_concat_fill_value"
+  },
+  {
+    "class": "TestCFEncodedDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_conventions.py",
+    "line_range": "L592-L601",
+    "method": "roundtrip",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `roundtrip` in `TestCFEncodedDataStore` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCFEncodedDataStore.roundtrip"
+  },
+  {
+    "class": "DaskTestCase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dask.py",
+    "line_range": "L49-L69",
+    "method": "assertLazyAnd",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `assertLazyAnd` in `DaskTestCase` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DaskTestCase.assertLazyAnd"
+  },
+  {
+    "class": "TestDataArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L1393-L1431",
+    "method": "test_selection_multiindex",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_selection_multiindex` in `TestDataArray` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArray.test_selection_multiindex"
+  },
+  {
+    "class": "TestReduce1D",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L5107-L5142",
+    "method": "test_min",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_min` in `TestReduce1D` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestReduce1D.test_min"
+  },
+  {
+    "class": "TestReduce2D",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L5866-L6006",
+    "method": "test_idxmin",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_idxmin` in `TestReduce2D` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestReduce2D.test_idxmin"
+  },
+  {
+    "class": "TestDropDuplicates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L7434-L7459",
+    "method": "test_drop_duplicates_1d",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_drop_duplicates_1d` in `TestDropDuplicates` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDropDuplicates.test_drop_duplicates_1d"
+  },
+  {
+    "class": "TestDataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataset.py",
+    "line_range": "L1150-L1212",
+    "method": "test_chunk_by_season_resampler",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_chunk_by_season_resampler` in `TestDataset` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataset.test_chunk_by_season_resampler"
+  },
+  {
+    "class": "TestDropDuplicates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataset.py",
+    "line_range": "L8199-L8230",
+    "method": "test_drop_duplicates_1d",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_drop_duplicates_1d` in `TestDropDuplicates` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDropDuplicates.test_drop_duplicates_1d"
+  },
+  {
+    "class": "TestDataArrayGroupBy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L1420-L1453",
+    "method": "test_groupby_reductions",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_groupby_reductions` in `TestDataArrayGroupBy` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayGroupBy.test_groupby_reductions"
+  },
+  {
+    "class": "TestDataArrayResample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L1890-L1936",
+    "method": "test_resample",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_resample` in `TestDataArrayResample` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayResample.test_resample"
+  },
+  {
+    "class": "TestDatasetResample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L2347-L2393",
+    "method": "test_resample",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_resample` in `TestDatasetResample` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatasetResample.test_resample"
+  },
+  {
+    "class": "TestSeasonGrouperAndResampler",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L3511-L3574",
+    "method": "test_season_resampler",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_season_resampler` in `TestSeasonGrouperAndResampler` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSeasonGrouperAndResampler.test_season_resampler"
+  },
+  {
+    "class": "IndexWithExtraVariables",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexes.py",
+    "line_range": "L739-L758",
+    "method": "create_variables",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `create_variables` in `IndexWithExtraVariables` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "IndexWithExtraVariables.create_variables"
+  },
+  {
+    "class": "TestIndexers",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexing.py",
+    "line_range": "L93-L118",
+    "method": "test_group_indexers_by_index",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_group_indexers_by_index` in `TestIndexers` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIndexers.test_group_indexers_by_index"
+  },
+  {
+    "class": "TestLazyArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexing.py",
+    "line_range": "L402-L465",
+    "method": "test_lazily_indexed_array",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_lazily_indexed_array` in `TestLazyArray` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestLazyArray.test_lazily_indexed_array"
+  },
+  {
+    "class": "TestMergeFunction",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_merge.py",
+    "line_range": "L306-L352",
+    "method": "test_merge_attrs_drop_conflicts_ambiguous_array_returns",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_merge_attrs_drop_conflicts_ambiguous_array_returns` in `TestMergeFunction` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestMergeFunction.test_merge_attrs_drop_conflicts_ambiguous_array_returns"
+  },
+  {
+    "class": "TestMergeMethod",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_merge.py",
+    "line_range": "L716-L737",
+    "method": "test_merge_fill_value",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_merge_fill_value` in `TestMergeMethod` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestMergeMethod.test_merge_fill_value"
+  },
+  {
+    "class": "CustomArrayIndexable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_namedarray.py",
+    "line_range": "L74-L85",
+    "method": "__getitem__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `CustomArrayIndexable` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CustomArrayIndexable.__getitem__"
+  },
+  {
+    "class": "TestNamedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_namedarray.py",
+    "line_range": "L395-L450",
+    "method": "test_new_namedarray",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_new_namedarray` in `TestNamedArray` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNamedArray.test_new_namedarray"
+  },
+  {
+    "class": "TestDiscreteColorMap",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L1230-L1254",
+    "method": "test_discrete_colormap_int_levels",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_discrete_colormap_int_levels` in `TestDiscreteColorMap` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDiscreteColorMap.test_discrete_colormap_int_levels"
+  },
+  {
+    "class": "Common2dMixin",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L1630-L1659",
+    "method": "test_convenient_facetgrid",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_convenient_facetgrid` in `Common2dMixin` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Common2dMixin.test_convenient_facetgrid"
+  },
+  {
+    "class": "TestAxesKwargs",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L3110-L3122",
+    "method": "data_array",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `data_array` in `TestAxesKwargs` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAxesKwargs.data_array"
+  },
+  {
+    "class": "TestDataArrayRolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_rolling.py",
+    "line_range": "L248-L264",
+    "method": "test_rolling_reduce",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_rolling_reduce` in `TestDataArrayRolling` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayRolling.test_rolling_reduce"
+  },
+  {
+    "class": "TestDatasetRolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_rolling.py",
+    "line_range": "L660-L683",
+    "method": "test_rolling_wrapped_bottleneck",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_rolling_wrapped_bottleneck` in `TestDatasetRolling` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatasetRolling.test_rolling_wrapped_bottleneck"
+  },
+  {
+    "class": "TestXarrayUfuncs",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_ufuncs.py",
+    "line_range": "L212-L231",
+    "method": "test_ufuncs",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_ufuncs` in `TestXarrayUfuncs` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestXarrayUfuncs.test_ufuncs"
+  },
+  {
+    "class": "method",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_units.py",
+    "line_range": "L306-L344",
+    "method": "__call__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__call__` in `method` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "method.__call__"
+  },
+  {
+    "class": "function",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_units.py",
+    "line_range": "L356-L373",
+    "method": "__init__",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `__init__` in `function` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "function.__init__"
+  },
+  {
+    "class": "TestVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_units.py",
+    "line_range": "L1795-L1825",
+    "method": "test_comparisons",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_comparisons` in `TestVariable` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariable.test_comparisons"
+  },
+  {
+    "class": "TestDataArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_units.py",
+    "line_range": "L3865-L3898",
+    "method": "test_computation_objects",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_computation_objects` in `TestDataArray` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArray.test_computation_objects"
+  },
+  {
+    "class": "VariableSubclassobjects",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L171-L193",
+    "method": "_assertIndexedLikeNDArray",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_assertIndexedLikeNDArray` in `VariableSubclassobjects` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "VariableSubclassobjects._assertIndexedLikeNDArray"
+  },
+  {
+    "class": "TestVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L1937-L1950",
+    "method": "test_quantile_method",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `test_quantile_method` in `TestVariable` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariable.test_quantile_method"
+  },
+  {
+    "class": "AggregationGenerator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/util/generate_aggregations.py",
+    "line_range": "L332-L413",
+    "method": "generate_method",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `generate_method` in `AggregationGenerator` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AggregationGenerator.generate_method"
+  },
+  {
+    "class": "GroupByAggregationGenerator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/util/generate_aggregations.py",
+    "line_range": "L439-L493",
+    "method": "generate_code",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `generate_code` in `GroupByAggregationGenerator` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "GroupByAggregationGenerator.generate_code"
+  },
+  {
+    "class": "GenericAggregationGenerator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/util/generate_aggregations.py",
+    "line_range": "L497-L515",
+    "method": "generate_code",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `generate_code` in `GenericAggregationGenerator` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "GenericAggregationGenerator.generate_code"
+  }
+]

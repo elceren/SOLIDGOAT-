@@ -1,0 +1,1712 @@
+[
+  {
+    "class": "AbstractDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L350-L372",
+    "method": "load",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `load` in `AbstractDataStore` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractDataStore.load"
+  },
+  {
+    "class": "H5NetCDFStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/h5netcdf_.py",
+    "line_range": "L124-L155",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `H5NetCDFStore` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "H5NetCDFStore.__init__"
+  },
+  {
+    "class": "H5netcdfBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/h5netcdf_.py",
+    "line_range": "L635-L716",
+    "method": "open_groups_as_dict",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `open_groups_as_dict` in `H5netcdfBackendEntrypoint` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "H5netcdfBackendEntrypoint.open_groups_as_dict"
+  },
+  {
+    "class": "LRUCache",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/lru_cache.py",
+    "line_range": "L34-L51",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `LRUCache` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "LRUCache.__init__"
+  },
+  {
+    "class": "NetCDF4DataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/netCDF4_.py",
+    "line_range": "L409-L433",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `NetCDF4DataStore` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDF4DataStore.__init__"
+  },
+  {
+    "class": "NetCDF4BackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/netCDF4_.py",
+    "line_range": "L841-L906",
+    "method": "open_groups_as_dict",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `open_groups_as_dict` in `NetCDF4BackendEntrypoint` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDF4BackendEntrypoint.open_groups_as_dict"
+  },
+  {
+    "class": "PydapDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/pydap_.py",
+    "line_range": "L154-L176",
+    "method": "open_store_variable",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `open_store_variable` in `PydapDataStore` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PydapDataStore.open_store_variable"
+  },
+  {
+    "class": "PydapBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/pydap_.py",
+    "line_range": "L343-L441",
+    "method": "open_groups_as_dict",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `open_groups_as_dict` in `PydapBackendEntrypoint` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PydapBackendEntrypoint.open_groups_as_dict"
+  },
+  {
+    "class": "ScipyDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/scipy_.py",
+    "line_range": "L183-L231",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `ScipyDataStore` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyDataStore.__init__"
+  },
+  {
+    "class": "ScipyBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/scipy_.py",
+    "line_range": "L380-L414",
+    "method": "open_dataset",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `open_dataset` in `ScipyBackendEntrypoint` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyBackendEntrypoint.open_dataset"
+  },
+  {
+    "class": "StoreBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/store.py",
+    "line_range": "L27-L73",
+    "method": "open_dataset",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `open_dataset` in `StoreBackendEntrypoint` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "StoreBackendEntrypoint.open_dataset"
+  },
+  {
+    "class": "ZarrStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/zarr.py",
+    "line_range": "L855-L897",
+    "method": "open_store_variable",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `open_store_variable` in `ZarrStore` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrStore.open_store_variable"
+  },
+  {
+    "class": "ZarrBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/zarr.py",
+    "line_range": "L1754-L1815",
+    "method": "open_groups_as_dict",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `open_groups_as_dict` in `ZarrBackendEntrypoint` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrBackendEntrypoint.open_groups_as_dict"
+  },
+  {
+    "class": "Tick",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftime_offsets.py",
+    "line_range": "L203-L215",
+    "method": "_next_higher_resolution",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_next_higher_resolution` in `Tick` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Tick._next_higher_resolution"
+  },
+  {
+    "class": "CFTimeIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftimeindex.py",
+    "line_range": "L459-L515",
+    "method": "shift",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `shift` in `CFTimeIndex` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFTimeIndex.shift"
+  },
+  {
+    "class": "EncodedStringCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/strings.py",
+    "line_range": "L56-L88",
+    "method": "encode",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `encode` in `EncodedStringCoder` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "EncodedStringCoder.encode"
+  },
+  {
+    "class": "CFMaskCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L280-L371",
+    "method": "encode",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `encode` in `CFMaskCoder` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFMaskCoder.encode"
+  },
+  {
+    "class": "BooleanCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L599-L608",
+    "method": "decode",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `decode` in `BooleanCoder` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BooleanCoder.decode"
+  },
+  {
+    "class": "EndianCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L617-L623",
+    "method": "decode",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `decode` in `EndianCoder` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "EndianCoder.decode"
+  },
+  {
+    "class": "SupportsArithmetic",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/arithmetic.py",
+    "line_range": "L44-L95",
+    "method": "__array_ufunc__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__array_ufunc__` in `SupportsArithmetic` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "SupportsArithmetic.__array_ufunc__"
+  },
+  {
+    "class": "Rolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L75-L129",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `Rolling` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Rolling.__init__"
+  },
+  {
+    "class": "DataArrayRolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L425-L475",
+    "method": "_construct",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_construct` in `DataArrayRolling` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayRolling._construct"
+  },
+  {
+    "class": "DatasetRolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L925-L1020",
+    "method": "construct",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `construct` in `DatasetRolling` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetRolling.construct"
+  },
+  {
+    "class": "Coarsen",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L1114-L1218",
+    "method": "construct",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `construct` in `Coarsen` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Coarsen.construct"
+  },
+  {
+    "class": "Weighted",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/weighted.py",
+    "line_range": "L149-L193",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `Weighted` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Weighted.__init__"
+  },
+  {
+    "class": "DatetimeAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/accessor_dt.py",
+    "line_range": "L387-L409",
+    "method": "isocalendar",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `isocalendar` in `DatetimeAccessor` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatetimeAccessor.isocalendar"
+  },
+  {
+    "class": "CombinedDatetimelikeAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/accessor_dt.py",
+    "line_range": "L654-L674",
+    "method": "__new__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__new__` in `CombinedDatetimelikeAccessor` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CombinedDatetimelikeAccessor.__new__"
+  },
+  {
+    "class": "StringAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/accessor_str.py",
+    "line_range": "L243-L281",
+    "method": "_re_compile",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_re_compile` in `StringAccessor` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "StringAccessor._re_compile"
+  },
+  {
+    "class": "DataWithCoords",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/common.py",
+    "line_range": "L918-L1129",
+    "method": "_resample",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_resample` in `DataWithCoords` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataWithCoords._resample"
+  },
+  {
+    "class": "AbstractCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L121-L199",
+    "method": "to_index",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `to_index` in `AbstractCoordinates` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractCoordinates.to_index"
+  },
+  {
+    "class": "Coordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L292-L355",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `Coordinates` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Coordinates.__init__"
+  },
+  {
+    "class": "DataArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/dataarray.py",
+    "line_range": "L416-L478",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `DataArray` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArray.__init__"
+  },
+  {
+    "class": "Dataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/dataset.py",
+    "line_range": "L1128-L1169",
+    "method": "_copy",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_copy` in `Dataset` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Dataset._copy"
+  },
+  {
+    "class": "DataTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/datatree.py",
+    "line_range": "L563-L573",
+    "method": "_pre_attach",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_pre_attach` in `DataTree` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataTree._pre_attach"
+  },
+  {
+    "class": "RenderDataTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/datatree_render.py",
+    "line_range": "L224-L235",
+    "method": "__item",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__item` in `RenderDataTree` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "RenderDataTree.__item"
+  },
+  {
+    "class": "PandasExtensionArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/extension_array.py",
+    "line_range": "L250-L260",
+    "method": "__post_init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__post_init__` in `PandasExtensionArray` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasExtensionArray.__post_init__"
+  },
+  {
+    "class": "ResolvedGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L322-L367",
+    "method": "__post_init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__post_init__` in `ResolvedGrouper` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ResolvedGrouper.__post_init__"
+  },
+  {
+    "class": "ComposedGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L523-L576",
+    "method": "factorize",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `factorize` in `ComposedGrouper` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ComposedGrouper.factorize"
+  },
+  {
+    "class": "GroupBy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L638-L696",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `GroupBy` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "GroupBy.__init__"
+  },
+  {
+    "class": "PandasIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L698-L748",
+    "method": "from_variables",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `from_variables` in `PandasIndex` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasIndex.from_variables"
+  },
+  {
+    "class": "PandasMultiIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1141-L1158",
+    "method": "unstack",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `unstack` in `PandasMultiIndex` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasMultiIndex.unstack"
+  },
+  {
+    "class": "CoordinateTransformIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1503-L1523",
+    "method": "create_variables",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `create_variables` in `CoordinateTransformIndex` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CoordinateTransformIndex.create_variables"
+  },
+  {
+    "class": "Indexes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1705-L1749",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `Indexes` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Indexes.__init__"
+  },
+  {
+    "class": "BasicIndexer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L487-L503",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `BasicIndexer` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BasicIndexer.__init__"
+  },
+  {
+    "class": "OuterIndexer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L517-L547",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `OuterIndexer` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "OuterIndexer.__init__"
+  },
+  {
+    "class": "VectorizedIndexer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L562-L591",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `VectorizedIndexer` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "VectorizedIndexer.__init__"
+  },
+  {
+    "class": "ExplicitlyIndexed",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L599-L606",
+    "method": "__array__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__array__` in `ExplicitlyIndexed` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ExplicitlyIndexed.__array__"
+  },
+  {
+    "class": "ImplicitToExplicitIndexingAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L682-L688",
+    "method": "__array__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__array__` in `ImplicitToExplicitIndexingAdapter` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ImplicitToExplicitIndexingAdapter.__array__"
+  },
+  {
+    "class": "LazilyIndexedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L741-L754",
+    "method": "_updated_key",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_updated_key` in `LazilyIndexedArray` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "LazilyIndexedArray._updated_key"
+  },
+  {
+    "class": "LazilyVectorizedIndexedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L873-L879",
+    "method": "__getitem__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `LazilyVectorizedIndexedArray` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "LazilyVectorizedIndexedArray.__getitem__"
+  },
+  {
+    "class": "PandasIndexingAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L1947-L1965",
+    "method": "__array__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__array__` in `PandasIndexingAdapter` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasIndexingAdapter.__array__"
+  },
+  {
+    "class": "NumpyInterpolator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/missing.py",
+    "line_range": "L100-L124",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `NumpyInterpolator` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NumpyInterpolator.__init__"
+  },
+  {
+    "class": "ScipyInterpolator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/missing.py",
+    "line_range": "L145-L196",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `ScipyInterpolator` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyInterpolator.__init__"
+  },
+  {
+    "class": "SplineInterpolator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/missing.py",
+    "line_range": "L207-L230",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `SplineInterpolator` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "SplineInterpolator.__init__"
+  },
+  {
+    "class": "set_options",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/options.py",
+    "line_range": "L348-L368",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `set_options` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "set_options.__init__"
+  },
+  {
+    "class": "CFTimeGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/resample_cftime.py",
+    "line_range": "L144-L170",
+    "method": "first_items",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `first_items` in `CFTimeGrouper` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFTimeGrouper.first_items"
+  },
+  {
+    "class": "NodePath",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/treenode.py",
+    "line_range": "L27-L38",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `NodePath` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NodePath.__init__"
+  },
+  {
+    "class": "TreeNode",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/treenode.py",
+    "line_range": "L113-L124",
+    "method": "_check_loop",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_check_loop` in `TreeNode` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TreeNode._check_loop"
+  },
+  {
+    "class": "NamedNode",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/treenode.py",
+    "line_range": "L742-L761",
+    "method": "relative_to",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `relative_to` in `NamedNode` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NamedNode.relative_to"
+  },
+  {
+    "class": "Variable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/variable.py",
+    "line_range": "L685-L719",
+    "method": "_validate_indexers",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_validate_indexers` in `Variable` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Variable._validate_indexers"
+  },
+  {
+    "class": "IndexVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/variable.py",
+    "line_range": "L2752-L2759",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `IndexVariable` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "IndexVariable.__init__"
+  },
+  {
+    "class": "EncodedGroups",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L103-L150",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `EncodedGroups` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "EncodedGroups.__init__"
+  },
+  {
+    "class": "UniqueGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L263-L280",
+    "method": "_factorize_given_labels",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_factorize_given_labels` in `UniqueGrouper` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "UniqueGrouper._factorize_given_labels"
+  },
+  {
+    "class": "BinGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L424-L470",
+    "method": "factorize",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `factorize` in `BinGrouper` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BinGrouper.factorize"
+  },
+  {
+    "class": "TimeResampler",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L520-L551",
+    "method": "_init_properties",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_init_properties` in `TimeResampler` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TimeResampler._init_properties"
+  },
+  {
+    "class": "SeasonGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L829-L867",
+    "method": "factorize",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `factorize` in `SeasonGrouper` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "SeasonGrouper.factorize"
+  },
+  {
+    "class": "SeasonResampler",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L901-L914",
+    "method": "__post_init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__post_init__` in `SeasonResampler` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "SeasonResampler.__post_init__"
+  },
+  {
+    "class": "ScipyKDTreeAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/nd_point_index.py",
+    "line_range": "L77-L86",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `ScipyKDTreeAdapter` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyKDTreeAdapter.__init__"
+  },
+  {
+    "class": "NDPointIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/nd_point_index.py",
+    "line_range": "L327-L374",
+    "method": "sel",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `sel` in `NDPointIndex` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NDPointIndex.sel"
+  },
+  {
+    "class": "RangeIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/range_index.py",
+    "line_range": "L194-L285",
+    "method": "arange",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `arange` in `RangeIndex` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "RangeIndex.arange"
+  },
+  {
+    "class": "DaskManager",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/daskmanager.py",
+    "line_range": "L253-L266",
+    "method": "shuffle",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `shuffle` in `DaskManager` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DaskManager.shuffle"
+  },
+  {
+    "class": "DuckArrayModule",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/pycompat.py",
+    "line_range": "L34-L66",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `DuckArrayModule` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DuckArrayModule.__init__"
+  },
+  {
+    "class": "FacetGrid",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/plot/facetgrid.py",
+    "line_range": "L127-L278",
+    "method": "__init__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__init__` in `FacetGrid` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "FacetGrid.__init__"
+  },
+  {
+    "class": "Aligner",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/structure/alignment.py",
+    "line_range": "L395-L508",
+    "method": "align_indexes",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `align_indexes` in `Aligner` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Aligner.align_indexes"
+  },
+  {
+    "class": "TestAssertIdenticalXindexes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_assertions.py",
+    "line_range": "L359-L380",
+    "method": "test_identical_custom_index_without_equals",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_identical_custom_index_without_equals` in `TestAssertIdenticalXindexes` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAssertIdenticalXindexes.test_identical_custom_index_without_equals"
+  },
+  {
+    "class": "DatasetIOBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L713-L719",
+    "method": "test_roundtrip_stringdtype_nulls",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_roundtrip_stringdtype_nulls` in `DatasetIOBase` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetIOBase.test_roundtrip_stringdtype_nulls"
+  },
+  {
+    "class": "CFEncodedBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L1083-L1093",
+    "method": "test_roundtrip_bytes_with_fill_value",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_roundtrip_bytes_with_fill_value` in `CFEncodedBase` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFEncodedBase.test_roundtrip_bytes_with_fill_value"
+  },
+  {
+    "class": "NetCDF4Base",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L1805-L1814",
+    "method": "test_child_group_with_inconsistent_dimensions",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_child_group_with_inconsistent_dimensions` in `NetCDF4Base` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDF4Base.test_child_group_with_inconsistent_dimensions"
+  },
+  {
+    "class": "TestNetCDF4AlreadyOpen",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2475-L2496",
+    "method": "test_group",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_group` in `TestNetCDF4AlreadyOpen` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNetCDF4AlreadyOpen.test_group"
+  },
+  {
+    "class": "FileObjectNetCDF",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2556-L2565",
+    "method": "test_file_remains_open",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_file_remains_open` in `FileObjectNetCDF` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "FileObjectNetCDF.test_file_remains_open"
+  },
+  {
+    "class": "TestNetCDF4ViaDaskData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2605-L2620",
+    "method": "test_write_inconsistent_chunks",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_write_inconsistent_chunks` in `TestNetCDF4ViaDaskData` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNetCDF4ViaDaskData.test_write_inconsistent_chunks"
+  },
+  {
+    "class": "ZarrBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L3205-L3212",
+    "method": "test_append_with_mode_rplus_success",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_append_with_mode_rplus_success` in `ZarrBase` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrBase.test_append_with_mode_rplus_success"
+  },
+  {
+    "class": "TestInstrumentedZarrStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L3893-L3903",
+    "method": "create_zarr_target",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `create_zarr_target` in `TestInstrumentedZarrStore` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestInstrumentedZarrStore.create_zarr_target"
+  },
+  {
+    "class": "TestGenericNetCDFData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L4870-L4896",
+    "method": "test_engine",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_engine` in `TestGenericNetCDFData` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestGenericNetCDFData.test_engine"
+  },
+  {
+    "class": "TestH5NetCDFAlreadyOpen",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L5161-L5182",
+    "method": "test_open_dataset_group",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_open_dataset_group` in `TestH5NetCDFAlreadyOpen` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestH5NetCDFAlreadyOpen.test_open_dataset_group"
+  },
+  {
+    "class": "TestH5NetCDFViaDaskData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L5308-L5323",
+    "method": "test_write_inconsistent_chunks",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_write_inconsistent_chunks` in `TestH5NetCDFViaDaskData` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestH5NetCDFViaDaskData.test_write_inconsistent_chunks"
+  },
+  {
+    "class": "TestOpenMFDatasetWithDataVarsAndCoordsKw",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L5574-L5595",
+    "method": "gen_datasets_with_common_coord_and_time",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `gen_datasets_with_common_coord_and_time` in `TestOpenMFDatasetWithDataVarsAndCoordsKw` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestOpenMFDatasetWithDataVarsAndCoordsKw.gen_datasets_with_common_coord_and_time"
+  },
+  {
+    "class": "TestDask",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L5994-L6005",
+    "method": "test_open_mfdataset_pathlib",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_open_mfdataset_pathlib` in `TestDask` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDask.test_open_mfdataset_pathlib"
+  },
+  {
+    "class": "TestPydap",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L6531-L6542",
+    "method": "convert_to_pydap_dataset",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `convert_to_pydap_dataset` in `TestPydap` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPydap.convert_to_pydap_dataset"
+  },
+  {
+    "class": "TestValidateAttrs",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L6731-L6817",
+    "method": "test_validating_attrs",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_validating_attrs` in `TestValidateAttrs` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestValidateAttrs.test_validating_attrs"
+  },
+  {
+    "class": "TestDataArrayToNetCDF",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L6868-L6876",
+    "method": "test_dataarray_to_netcdf_no_name_pathlib",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_dataarray_to_netcdf_no_name_pathlib` in `TestDataArrayToNetCDF` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayToNetCDF.test_dataarray_to_netcdf_no_name_pathlib"
+  },
+  {
+    "class": "TestNCZarr",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L7595-L7610",
+    "method": "_create_nczarr",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `_create_nczarr` in `TestNCZarr` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNCZarr._create_nczarr"
+  },
+  {
+    "class": "TestZarrRegionAuto",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L8116-L8161",
+    "method": "test_dataset_to_zarr_align_chunks_true",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_dataset_to_zarr_align_chunks_true` in `TestZarrRegionAuto` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestZarrRegionAuto.test_dataset_to_zarr_align_chunks_true"
+  },
+  {
+    "class": "TestPyDAPDatatreeIO",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends_datatree.py",
+    "line_range": "L618-L672",
+    "method": "test_inherited_coords",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_inherited_coords` in `TestPyDAPDatatreeIO` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPyDAPDatatreeIO.test_inherited_coords"
+  },
+  {
+    "class": "TestTileIDsFromCoords",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L162-L169",
+    "method": "test_1d",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_1d` in `TestTileIDsFromCoords` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestTileIDsFromCoords.test_1d"
+  },
+  {
+    "class": "TestNestedCombine",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L395-L426",
+    "method": "test_nested_concat",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_nested_concat` in `TestNestedCombine` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNestedCombine.test_nested_concat"
+  },
+  {
+    "class": "TestCombineDatasetsbyCoords",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L790-L802",
+    "method": "test_combine_by_coords",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_combine_by_coords` in `TestCombineDatasetsbyCoords` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCombineDatasetsbyCoords.test_combine_by_coords"
+  },
+  {
+    "class": "TestCombineMixedObjectsbyCoords",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L1179-L1194",
+    "method": "test_combine_by_coords_mixed_unnamed_dataarrays",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_combine_by_coords_mixed_unnamed_dataarrays` in `TestCombineMixedObjectsbyCoords` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCombineMixedObjectsbyCoords.test_combine_by_coords_mixed_unnamed_dataarrays"
+  },
+  {
+    "class": "TestNewDefaults",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L1280-L1297",
+    "method": "test_nested_merge_with_overlapping_values",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_nested_merge_with_overlapping_values` in `TestNewDefaults` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNewDefaults.test_nested_merge_with_overlapping_values"
+  },
+  {
+    "class": "TestConcatDataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_concat.py",
+    "line_range": "L518-L541",
+    "method": "test_concat_merge_variables_present_in_some_datasets",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_concat_merge_variables_present_in_some_datasets` in `TestConcatDataset` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestConcatDataset.test_concat_merge_variables_present_in_some_datasets"
+  },
+  {
+    "class": "TestConcatDataArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_concat.py",
+    "line_range": "L1174-L1217",
+    "method": "test_concat",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_concat` in `TestConcatDataArray` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestConcatDataArray.test_concat"
+  },
+  {
+    "class": "TestNewDefaults",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_concat.py",
+    "line_range": "L1495-L1513",
+    "method": "test_concat_second_empty_with_scalar_data_var_only_on_first",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_concat_second_empty_with_scalar_data_var_only_on_first` in `TestNewDefaults` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNewDefaults.test_concat_second_empty_with_scalar_data_var_only_on_first"
+  },
+  {
+    "class": "TestConcatDataTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_concat.py",
+    "line_range": "L1746-L1763",
+    "method": "test_concat_datatree_names",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_concat_datatree_names` in `TestConcatDataTree` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestConcatDataTree.test_concat_datatree_names"
+  },
+  {
+    "class": "TestEncodeCFVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_conventions.py",
+    "line_range": "L127-L138",
+    "method": "test_incompatible_attributes",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_incompatible_attributes` in `TestEncodeCFVariable` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestEncodeCFVariable.test_incompatible_attributes"
+  },
+  {
+    "class": "TestDecodeCF",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_conventions.py",
+    "line_range": "L272-L288",
+    "method": "test_dataset",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_dataset` in `TestDecodeCF` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDecodeCF.test_dataset"
+  },
+  {
+    "class": "TestCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_coordinates.py",
+    "line_range": "L19-L22",
+    "method": "test_init_noindex",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_init_noindex` in `TestCoordinates` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCoordinates.test_init_noindex"
+  },
+  {
+    "class": "TestVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dask.py",
+    "line_range": "L80-L85",
+    "method": "setUp",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestVariable` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariable.setUp"
+  },
+  {
+    "class": "TestDataArrayAndDataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dask.py",
+    "line_range": "L339-L347",
+    "method": "setUp",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestDataArrayAndDataset` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayAndDataset.setUp"
+  },
+  {
+    "class": "TestDataArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L83-L96",
+    "method": "setup",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `setup` in `TestDataArray` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArray.setup"
+  },
+  {
+    "class": "TestReduce2D",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L6157-L6224",
+    "method": "test_argmin_dim",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_argmin_dim` in `TestReduce2D` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestReduce2D.test_argmin_dim"
+  },
+  {
+    "class": "TestIrisConversion",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L7035-L7102",
+    "method": "test_to_and_from_iris",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_to_and_from_iris` in `TestIrisConversion` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIrisConversion.test_to_and_from_iris"
+  },
+  {
+    "class": "TestNumpyCoercion",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L7510-L7523",
+    "method": "test_from_pint",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_from_pint` in `TestNumpyCoercion` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNumpyCoercion.test_from_pint"
+  },
+  {
+    "class": "InaccessibleVariableDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataset.py",
+    "line_range": "L229-L236",
+    "method": "get_variables",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `get_variables` in `InaccessibleVariableDataStore` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "InaccessibleVariableDataStore.get_variables"
+  },
+  {
+    "class": "AccessibleAsDuckArrayDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataset.py",
+    "line_range": "L270-L277",
+    "method": "get_variables",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `get_variables` in `AccessibleAsDuckArrayDataStore` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AccessibleAsDuckArrayDataStore.get_variables"
+  },
+  {
+    "class": "TestDataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataset.py",
+    "line_range": "L281-L342",
+    "method": "test_repr",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_repr` in `TestDataset` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataset.test_repr"
+  },
+  {
+    "class": "TestNumpyCoercion",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataset.py",
+    "line_range": "L8247-L8257",
+    "method": "test_from_pint",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_from_pint` in `TestNumpyCoercion` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNumpyCoercion.test_from_pint"
+  },
+  {
+    "class": "TestTreeCreation",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L35-L55",
+    "method": "test_name",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_name` in `TestTreeCreation` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestTreeCreation.test_name"
+  },
+  {
+    "class": "TestFamilyTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L87-L91",
+    "method": "test_dont_modify_children_inplace",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_dont_modify_children_inplace` in `TestFamilyTree` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestFamilyTree.test_dont_modify_children_inplace"
+  },
+  {
+    "class": "TestNames",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L120-L123",
+    "method": "test_child_gets_named_on_attach",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_child_gets_named_on_attach` in `TestNames` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNames.test_child_gets_named_on_attach"
+  },
+  {
+    "class": "TestPaths",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L161-L170",
+    "method": "test_same_tree",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_same_tree` in `TestPaths` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPaths.test_same_tree"
+  },
+  {
+    "class": "TestStoreDatasets",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L195-L202",
+    "method": "test_create_with_data",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_create_with_data` in `TestStoreDatasets` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestStoreDatasets.test_create_with_data"
+  },
+  {
+    "class": "TestVariablesChildrenNameCollisions",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L274-L277",
+    "method": "test_parent_already_has_variable_with_childs_name_update",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_parent_already_has_variable_with_childs_name_update` in `TestVariablesChildrenNameCollisions` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariablesChildrenNameCollisions.test_parent_already_has_variable_with_childs_name_update"
+  },
+  {
+    "class": "TestUpdate",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L355-L360",
+    "method": "test_update",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_update` in `TestUpdate` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestUpdate.test_update"
+  },
+  {
+    "class": "TestCopy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L448-L462",
+    "method": "test_copy_coord_inheritance",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_copy_coord_inheritance` in `TestCopy` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCopy.test_copy_coord_inheritance"
+  },
+  {
+    "class": "TestSetItem",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L510-L517",
+    "method": "test_setitem_new_child_node",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_setitem_new_child_node` in `TestSetItem` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSetItem.test_setitem_new_child_node"
+  },
+  {
+    "class": "TestCoords",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L623-L685",
+    "method": "test_properties",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_properties` in `TestCoords` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCoords.test_properties"
+  },
+  {
+    "class": "TestTreeFromDict",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L869-L876",
+    "method": "test_datatree_values",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_datatree_values` in `TestTreeFromDict` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestTreeFromDict.test_datatree_values"
+  },
+  {
+    "class": "TestRepr",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L1271-L1325",
+    "method": "test_repr_two_children",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_repr_two_children` in `TestRepr` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestRepr.test_repr_two_children"
+  },
+  {
+    "class": "TestInheritance",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L1619-L1652",
+    "method": "test_inconsistent_dims",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_inconsistent_dims` in `TestInheritance` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestInheritance.test_inconsistent_dims"
+  },
+  {
+    "class": "TestRestructuring",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L1775-L1785",
+    "method": "test_assign",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_assign` in `TestRestructuring` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestRestructuring.test_assign"
+  },
+  {
+    "class": "TestIsomorphicEqualsAndIdentical",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L1895-L1974",
+    "method": "test_minimal_variations",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_minimal_variations` in `TestIsomorphicEqualsAndIdentical` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIsomorphicEqualsAndIdentical.test_minimal_variations"
+  },
+  {
+    "class": "TestAggregations",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L2327-L2335",
+    "method": "test_subtree",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_subtree` in `TestAggregations` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAggregations.test_subtree"
+  },
+  {
+    "class": "TestOps",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L2349-L2360",
+    "method": "test_unary_op_inherited_coords",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_unary_op_inherited_coords` in `TestOps` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestOps.test_unary_op_inherited_coords"
+  },
+  {
+    "class": "TestOps",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_duck_array_ops.py",
+    "line_range": "L178-L187",
+    "method": "test_where_extension_duck_array",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_where_extension_duck_array` in `TestOps` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestOps.test_where_extension_duck_array"
+  },
+  {
+    "class": "TestFormatting",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_formatting.py",
+    "line_range": "L234-L251",
+    "method": "test_index_repr",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_index_repr` in `TestFormatting` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestFormatting.test_index_repr"
+  },
+  {
+    "class": "TestDataArrayGroupBy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L1278-L1293",
+    "method": "setup",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `setup` in `TestDataArrayGroupBy` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayGroupBy.setup"
+  },
+  {
+    "class": "TestDataArrayResample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L1975-L2019",
+    "method": "test_resample_first_last",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_resample_first_last` in `TestDataArrayResample` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayResample.test_resample_first_last"
+  },
+  {
+    "class": "TestDatasetResample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L2497-L2521",
+    "method": "test_resample_drop_nondim_coords",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_resample_drop_nondim_coords` in `TestDatasetResample` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatasetResample.test_resample_drop_nondim_coords"
+  },
+  {
+    "class": "TestSeasonGrouperAndResampler",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L3322-L3333",
+    "method": "test_season_grouper_raises_error_if_months_are_not_valid_or_not_continuous",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_season_grouper_raises_error_if_months_are_not_valid_or_not_continuous` in `TestSeasonGrouperAndResampler` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSeasonGrouperAndResampler.test_season_grouper_raises_error_if_months_are_not_valid_or_not_continuous"
+  },
+  {
+    "class": "TestPandasIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexes.py",
+    "line_range": "L118-L130",
+    "method": "test_constructor",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_constructor` in `TestPandasIndex` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPandasIndex.test_constructor"
+  },
+  {
+    "class": "TestPandasMultiIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexes.py",
+    "line_range": "L333-L355",
+    "method": "test_constructor",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_constructor` in `TestPandasMultiIndex` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPandasMultiIndex.test_constructor"
+  },
+  {
+    "class": "TestIndexes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexes.py",
+    "line_range": "L565-L579",
+    "method": "indexes_and_vars",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `indexes_and_vars` in `TestIndexes` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIndexes.indexes_and_vars"
+  },
+  {
+    "class": "IndexWithExtraVariables",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexes.py",
+    "line_range": "L739-L758",
+    "method": "create_variables",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `create_variables` in `IndexWithExtraVariables` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "IndexWithExtraVariables.create_variables"
+  },
+  {
+    "class": "TestIndexers",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexing.py",
+    "line_range": "L139-L281",
+    "method": "test_map_index_queries",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_map_index_queries` in `TestIndexers` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIndexers.test_map_index_queries"
+  },
+  {
+    "class": "TestLazyArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexing.py",
+    "line_range": "L402-L465",
+    "method": "test_lazily_indexed_array",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_lazily_indexed_array` in `TestLazyArray` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestLazyArray.test_lazily_indexed_array"
+  },
+  {
+    "class": "TestMergeFunction",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_merge.py",
+    "line_range": "L263-L304",
+    "method": "test_merge_attrs_drop_conflicts_custom_eq_returns_array",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_merge_attrs_drop_conflicts_custom_eq_returns_array` in `TestMergeFunction` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestMergeFunction.test_merge_attrs_drop_conflicts_custom_eq_returns_array"
+  },
+  {
+    "class": "CustomArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_namedarray.py",
+    "line_range": "L60-L66",
+    "method": "__array__",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `__array__` in `CustomArray` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CustomArray.__array__"
+  },
+  {
+    "class": "TestNamedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_namedarray.py",
+    "line_range": "L254-L267",
+    "method": "test_from_array_with_explicitly_indexed",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_from_array_with_explicitly_indexed` in `TestNamedArray` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNamedArray.test_from_array_with_explicitly_indexed"
+  },
+  {
+    "class": "TestDataFrameToXArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_pandas_to_xarray.py",
+    "line_range": "L113-L125",
+    "method": "df",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `df` in `TestDataFrameToXArray` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataFrameToXArray.df"
+  },
+  {
+    "class": "Common2dMixin",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L1293-L1316",
+    "method": "setUp",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `setUp` in `Common2dMixin` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Common2dMixin.setUp"
+  },
+  {
+    "class": "TestDatasetQuiverPlots",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L2662-L2679",
+    "method": "setUp",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestDatasetQuiverPlots` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatasetQuiverPlots.setUp"
+  },
+  {
+    "class": "TestDatasetStreamplotPlots",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L2745-L2762",
+    "method": "setUp",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestDatasetStreamplotPlots` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatasetStreamplotPlots.setUp"
+  },
+  {
+    "class": "TestDatasetScatterPlots",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L2800-L2817",
+    "method": "setUp",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestDatasetScatterPlots` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatasetScatterPlots.setUp"
+  },
+  {
+    "class": "TestAxesKwargs",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L3110-L3122",
+    "method": "data_array",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `data_array` in `TestAxesKwargs` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAxesKwargs.data_array"
+  },
+  {
+    "class": "TestDataArrayRolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_rolling.py",
+    "line_range": "L288-L322",
+    "method": "test_rolling_count_correct",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_rolling_count_correct` in `TestDataArrayRolling` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayRolling.test_rolling_count_correct"
+  },
+  {
+    "class": "TestSparseDataArrayAndDataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_sparse.py",
+    "line_range": "L721-L737",
+    "method": "test_sparse_dask_dataset_repr",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_sparse_dask_dataset_repr` in `TestSparseDataArrayAndDataset` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSparseDataArrayAndDataset.test_sparse_dask_dataset_repr"
+  },
+  {
+    "class": "TestVariablesStrategy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_strategies.py",
+    "line_range": "L211-L237",
+    "method": "test_make_strategies_namespace",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_make_strategies_namespace` in `TestVariablesStrategy` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariablesStrategy.test_make_strategies_namespace"
+  },
+  {
+    "class": "TestFamilyTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_treenode.py",
+    "line_range": "L23-L29",
+    "method": "test_parenting",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_parenting` in `TestFamilyTree` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestFamilyTree.test_parenting"
+  },
+  {
+    "class": "TestGetNodes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_treenode.py",
+    "line_range": "L142-L169",
+    "method": "test_get_child",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_get_child` in `TestGetNodes` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestGetNodes.test_get_child"
+  },
+  {
+    "class": "TestSetNodes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_treenode.py",
+    "line_range": "L198-L206",
+    "method": "test_set_child_node",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_set_child_node` in `TestSetNodes` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSetNodes.test_set_child_node"
+  },
+  {
+    "class": "TestPruning",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_treenode.py",
+    "line_range": "L265-L275",
+    "method": "test_del_child",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_del_child` in `TestPruning` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPruning.test_del_child"
+  },
+  {
+    "class": "TestGroupSubtrees",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_treenode.py",
+    "line_range": "L341-L355",
+    "method": "test_different_order",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_different_order` in `TestGroupSubtrees` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestGroupSubtrees.test_different_order"
+  },
+  {
+    "class": "TestRenderTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_treenode.py",
+    "line_range": "L481-L506",
+    "method": "test_render_nodetree",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_render_nodetree` in `TestRenderTree` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestRenderTree.test_render_nodetree"
+  },
+  {
+    "class": "TestXarrayUfuncs",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_ufuncs.py",
+    "line_range": "L204-L208",
+    "method": "setUp",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestXarrayUfuncs` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestXarrayUfuncs.setUp"
+  },
+  {
+    "class": "VariableSubclassobjects",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L126-L144",
+    "method": "test_getitem_1d_fancy",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_getitem_1d_fancy` in `VariableSubclassobjects` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "VariableSubclassobjects.test_getitem_1d_fancy"
+  },
+  {
+    "class": "TestVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L1082-L1088",
+    "method": "test_numpy_same_methods",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_numpy_same_methods` in `TestVariable` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariable.test_numpy_same_methods"
+  },
+  {
+    "class": "TestVariableWithDask",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L2475-L2483",
+    "method": "test_getitem_with_mask_nd_indexer",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_getitem_with_mask_nd_indexer` in `TestVariableWithDask` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariableWithDask.test_getitem_with_mask_nd_indexer"
+  },
+  {
+    "class": "TestIndexVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L2603-L2610",
+    "method": "test_level_names",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_level_names` in `TestIndexVariable` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIndexVariable.test_level_names"
+  },
+  {
+    "class": "TestAsCompatibleData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L2755-L2780",
+    "method": "test_masked_array",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_masked_array` in `TestAsCompatibleData` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAsCompatibleData.test_masked_array"
+  },
+  {
+    "class": "TestBackendIndexing",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L2997-L2999",
+    "method": "test_extension_array_duck_indexed",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_extension_array_duck_indexed` in `TestBackendIndexing` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestBackendIndexing.test_extension_array_duck_indexed"
+  },
+  {
+    "class": "TestNumpyCoercion",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L3101-L3112",
+    "method": "test_from_pint",
+    "principle": "DIP",
+    "reasoning": "Mock LLM flagged `test_from_pint` in `TestNumpyCoercion` as a potential DIP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNumpyCoercion.test_from_pint"
+  }
+]

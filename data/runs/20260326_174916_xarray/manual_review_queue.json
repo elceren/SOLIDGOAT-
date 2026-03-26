@@ -1,0 +1,35 @@
+[
+  {
+    "issue_id": {
+      "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+      "line_range": "L331-L333",
+      "principle": "SRP",
+      "symbol_name": "AbstractDataStore.get_child_store"
+    },
+    "notes": "",
+    "reviewer": "",
+    "status": "pending_manual_review"
+  },
+  {
+    "issue_id": {
+      "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+      "line_range": "L437-L470",
+      "principle": "SRP",
+      "symbol_name": "AbstractWritableDataStore.encode"
+    },
+    "notes": "",
+    "reviewer": "",
+    "status": "pending_manual_review"
+  },
+  {
+    "issue_id": {
+      "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+      "line_range": "L777-L792",
+      "principle": "SRP",
+      "symbol_name": "BackendEntrypoint.open_dataset"
+    },
+    "notes": "",
+    "reviewer": "",
+    "status": "pending_manual_review"
+  }
+]

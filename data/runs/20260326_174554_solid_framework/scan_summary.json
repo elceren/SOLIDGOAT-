@@ -1,0 +1,32 @@
+[
+  {
+    "duplicate_count": 1,
+    "issue_count": 1,
+    "new_count": 0,
+    "principle": "SRP"
+  },
+  {
+    "duplicate_count": 1,
+    "issue_count": 1,
+    "new_count": 0,
+    "principle": "OCP"
+  },
+  {
+    "duplicate_count": 0,
+    "issue_count": 0,
+    "new_count": 0,
+    "principle": "LSP"
+  },
+  {
+    "duplicate_count": 0,
+    "issue_count": 0,
+    "new_count": 0,
+    "principle": "ISP"
+  },
+  {
+    "duplicate_count": 0,
+    "issue_count": 0,
+    "new_count": 0,
+    "principle": "DIP"
+  }
+]

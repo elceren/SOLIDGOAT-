@@ -1,0 +1,24 @@
+[
+  {
+    "issue_id": {
+      "file": "/Users/elsteel/solid_framework/core/registry.py",
+      "line_range": "L40-L47",
+      "principle": "SRP",
+      "symbol_name": "IssueRegistry.issue_id"
+    },
+    "notes": "",
+    "reviewer": "",
+    "status": "pending_manual_review"
+  },
+  {
+    "issue_id": {
+      "file": "/Users/elsteel/solid_framework/core/registry.py",
+      "line_range": "L12-L25",
+      "principle": "OCP",
+      "symbol_name": "IssueRegistry._load"
+    },
+    "notes": "",
+    "reviewer": "",
+    "status": "pending_manual_review"
+  }
+]

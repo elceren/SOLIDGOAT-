@@ -1,0 +1,35 @@
+[
+  {
+    "issue_id": {
+      "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+      "line_range": "L331-L333",
+      "principle": "SRP",
+      "symbol_name": "AbstractDataStore.get_child_store"
+    },
+    "status": "incorrect",
+    "reviewer": "Codex preliminary review",
+    "notes": "This is an abstract method that only declares an interface and raises NotImplementedError. It does not combine multiple responsibilities, so the SRP flag is a false positive."
+  },
+  {
+    "issue_id": {
+      "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+      "line_range": "L437-L470",
+      "principle": "SRP",
+      "symbol_name": "AbstractWritableDataStore.encode"
+    },
+    "status": "incorrect",
+    "reviewer": "Codex preliminary review",
+    "notes": "The method performs one coherent task: encoding variables and attributes before writing. It is somewhat long, but the current logic still reads as a single responsibility rather than a clear SRP violation."
+  },
+  {
+    "issue_id": {
+      "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+      "line_range": "L777-L792",
+      "principle": "SRP",
+      "symbol_name": "BackendEntrypoint.open_dataset"
+    },
+    "status": "incorrect",
+    "reviewer": "Codex preliminary review",
+    "notes": "This is another abstract backend contract method. Because it only defines the expected interface and raises NotImplementedError, the detector output is not a convincing SRP violation."
+  }
+]

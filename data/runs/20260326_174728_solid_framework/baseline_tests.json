@@ -1,0 +1,4 @@
+{
+  "output": "============================= test session starts ==============================\nplatform darwin -- Python 3.14.2, pytest-8.3.5, pluggy-1.6.0\nrootdir: /Users/elsteel/solid_framework\ncollected 1 item\n\ntests/test_runner_target.py .                                            [100%]\n\n============================== 1 passed in 0.00s ===============================",
+  "success": true
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "class": "IssueRegistry",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/solid_framework/core/registry.py",
+    "line_range": "L12-L25",
+    "method": "_load",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_load` in `IssueRegistry` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "IssueRegistry._load"
+  }
+]

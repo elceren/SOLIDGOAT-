@@ -241,33 +241,41 @@ def _collect_candidates(tree: ast.AST) -> List[IssueCandidate]:
     return candidates
 
 
-def detect_violations(repository_path: Path) -> List[Dict[str, object]]:
+def detect_violations(
+    repository_path: Path,
+    principle: str | None = None,
+    scan_roots: List[Path] | None = None,
+) -> List[Dict[str, object]]:
     issues: List[Dict[str, object]] = []
 
-    for file_path in sorted(repository_path.rglob("*")):
-        if file_path.suffix not in SUPPORTED_EXTENSIONS or _should_skip(file_path):
-            continue
+    roots = scan_roots or [repository_path]
+    for root in roots:
+        for file_path in sorted(root.rglob("*")):
+            if file_path.suffix not in SUPPORTED_EXTENSIONS or _should_skip(file_path):
+                continue
 
-        source = read_text_file(file_path)
-        if source is None:
-            continue
+            source = read_text_file(file_path)
+            if source is None:
+                continue
 
-        analysis_source = _sanitize_source(source)
-        try:
-            tree = ast.parse(analysis_source)
-        except SyntaxError:
-            continue
+            analysis_source = _sanitize_source(source)
+            try:
+                tree = ast.parse(analysis_source)
+            except SyntaxError:
+                continue
 
-        for candidate in _collect_candidates(tree):
-            _record_issue(
-                issues,
-                file_path=file_path,
-                class_name=str(candidate["class"]),
-                method_name=str(candidate["method"]),
-                symbol_name=str(candidate["symbol_name"]),
-                line_range=str(candidate["line_range"]),
-                principle=str(candidate["principle"]),
-                source=analysis_source,
-            )
+            for candidate in _collect_candidates(tree):
+                if principle is not None and str(candidate["principle"]) != principle:
+                    continue
+                _record_issue(
+                    issues,
+                    file_path=file_path,
+                    class_name=str(candidate["class"]),
+                    method_name=str(candidate["method"]),
+                    symbol_name=str(candidate["symbol_name"]),
+                    line_range=str(candidate["line_range"]),
+                    principle=str(candidate["principle"]),
+                    source=analysis_source,
+                )
 
     return issues

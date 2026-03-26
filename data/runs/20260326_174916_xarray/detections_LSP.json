@@ -1,0 +1,1002 @@
+[
+  {
+    "class": "AbstractWritableDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L437-L470",
+    "method": "encode",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `encode` in `AbstractWritableDataStore` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractWritableDataStore.encode"
+  },
+  {
+    "class": "FileManager",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/file_manager.py",
+    "line_range": "L38-L40",
+    "method": "acquire",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `acquire` in `FileManager` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "FileManager.acquire"
+  },
+  {
+    "class": "CachingFileManager",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/file_manager.py",
+    "line_range": "L205-L213",
+    "method": "acquire_context",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `acquire_context` in `CachingFileManager` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CachingFileManager.acquire_context"
+  },
+  {
+    "class": "PickleableFileManager",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/file_manager.py",
+    "line_range": "L379-L384",
+    "method": "_get_unclosed_file",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `_get_unclosed_file` in `PickleableFileManager` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PickleableFileManager._get_unclosed_file"
+  },
+  {
+    "class": "H5NetCDFStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/h5netcdf_.py",
+    "line_range": "L124-L155",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `H5NetCDFStore` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "H5NetCDFStore.__init__"
+  },
+  {
+    "class": "LRUCache",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/lru_cache.py",
+    "line_range": "L34-L51",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `LRUCache` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "LRUCache.__init__"
+  },
+  {
+    "class": "BaseNetCDF4Array",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/netCDF4_.py",
+    "line_range": "L100-L101",
+    "method": "get_array",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `get_array` in `BaseNetCDF4Array` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BaseNetCDF4Array.get_array"
+  },
+  {
+    "class": "NetCDF4ArrayWrapper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/netCDF4_.py",
+    "line_range": "L121-L141",
+    "method": "_getitem",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `_getitem` in `NetCDF4ArrayWrapper` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDF4ArrayWrapper._getitem"
+  },
+  {
+    "class": "NetCDF4DataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/netCDF4_.py",
+    "line_range": "L409-L433",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `NetCDF4DataStore` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDF4DataStore.__init__"
+  },
+  {
+    "class": "ScipyArrayWrapper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/scipy_.py",
+    "line_range": "L100-L110",
+    "method": "__setitem__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__setitem__` in `ScipyArrayWrapper` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyArrayWrapper.__setitem__"
+  },
+  {
+    "class": "ScipyDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/scipy_.py",
+    "line_range": "L183-L231",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `ScipyDataStore` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyDataStore.__init__"
+  },
+  {
+    "class": "ZarrStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/zarr.py",
+    "line_range": "L909-L921",
+    "method": "get_dimensions",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `get_dimensions` in `ZarrStore` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrStore.get_dimensions"
+  },
+  {
+    "class": "Tick",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftime_offsets.py",
+    "line_range": "L203-L215",
+    "method": "_next_higher_resolution",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `_next_higher_resolution` in `Tick` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Tick._next_higher_resolution"
+  },
+  {
+    "class": "QuarterOffset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftime_offsets.py",
+    "line_range": "L449-L459",
+    "method": "__sub__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__sub__` in `QuarterOffset` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "QuarterOffset.__sub__"
+  },
+  {
+    "class": "YearOffset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftime_offsets.py",
+    "line_range": "L537-L548",
+    "method": "__sub__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__sub__` in `YearOffset` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "YearOffset.__sub__"
+  },
+  {
+    "class": "CFTimeIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftimeindex.py",
+    "line_range": "L312-L374",
+    "method": "_partial_date_slice",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `_partial_date_slice` in `CFTimeIndex` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFTimeIndex._partial_date_slice"
+  },
+  {
+    "class": "EncodedStringCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/strings.py",
+    "line_range": "L56-L88",
+    "method": "encode",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `encode` in `EncodedStringCoder` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "EncodedStringCoder.encode"
+  },
+  {
+    "class": "StackedBytesArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/strings.py",
+    "line_range": "L263-L274",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `StackedBytesArray` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "StackedBytesArray.__init__"
+  },
+  {
+    "class": "CFMaskCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L280-L371",
+    "method": "encode",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `encode` in `CFMaskCoder` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFMaskCoder.encode"
+  },
+  {
+    "class": "DefaultFillvalueCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L578-L579",
+    "method": "decode",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `decode` in `DefaultFillvalueCoder` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DefaultFillvalueCoder.decode"
+  },
+  {
+    "class": "EndianCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L614-L615",
+    "method": "encode",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `encode` in `EndianCoder` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "EndianCoder.encode"
+  },
+  {
+    "class": "NonStringCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L656-L657",
+    "method": "decode",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `decode` in `NonStringCoder` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NonStringCoder.decode"
+  },
+  {
+    "class": "ObjectVLenStringCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L661-L662",
+    "method": "encode",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `encode` in `ObjectVLenStringCoder` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ObjectVLenStringCoder.encode"
+  },
+  {
+    "class": "Numpy2StringDTypeCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L675-L676",
+    "method": "encode",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `encode` in `Numpy2StringDTypeCoder` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Numpy2StringDTypeCoder.encode"
+  },
+  {
+    "class": "NativeEnumCoder",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/variables.py",
+    "line_range": "L700-L701",
+    "method": "decode",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `decode` in `NativeEnumCoder` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NativeEnumCoder.decode"
+  },
+  {
+    "class": "Rolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L75-L129",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `Rolling` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Rolling.__init__"
+  },
+  {
+    "class": "DataArrayRolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L307-L324",
+    "method": "__iter__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__iter__` in `DataArrayRolling` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayRolling.__iter__"
+  },
+  {
+    "class": "DatasetRolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L925-L1020",
+    "method": "construct",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `construct` in `DatasetRolling` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetRolling.construct"
+  },
+  {
+    "class": "Coarsen",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling.py",
+    "line_range": "L1047-L1096",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `Coarsen` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Coarsen.__init__"
+  },
+  {
+    "class": "RollingExp",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling_exp.py",
+    "line_range": "L71-L92",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `RollingExp` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "RollingExp.__init__"
+  },
+  {
+    "class": "Weighted",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/weighted.py",
+    "line_range": "L149-L193",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `Weighted` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Weighted.__init__"
+  },
+  {
+    "class": "DatetimeAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/accessor_dt.py",
+    "line_range": "L387-L409",
+    "method": "isocalendar",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `isocalendar` in `DatetimeAccessor` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatetimeAccessor.isocalendar"
+  },
+  {
+    "class": "CombinedDatetimelikeAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/accessor_dt.py",
+    "line_range": "L654-L674",
+    "method": "__new__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__new__` in `CombinedDatetimelikeAccessor` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CombinedDatetimelikeAccessor.__new__"
+  },
+  {
+    "class": "StringAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/accessor_str.py",
+    "line_range": "L243-L281",
+    "method": "_re_compile",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `_re_compile` in `StringAccessor` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "StringAccessor._re_compile"
+  },
+  {
+    "class": "DataWithCoords",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/common.py",
+    "line_range": "L505-L513",
+    "method": "get_index",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `get_index` in `DataWithCoords` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataWithCoords.get_index"
+  },
+  {
+    "class": "AbstractCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L58-L59",
+    "method": "__getitem__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `AbstractCoordinates` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractCoordinates.__getitem__"
+  },
+  {
+    "class": "Coordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L292-L355",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `Coordinates` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Coordinates.__init__"
+  },
+  {
+    "class": "DatasetCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L924-L927",
+    "method": "__getitem__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `DatasetCoordinates` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetCoordinates.__getitem__"
+  },
+  {
+    "class": "DataTreeCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L1026-L1029",
+    "method": "__getitem__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `DataTreeCoordinates` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataTreeCoordinates.__getitem__"
+  },
+  {
+    "class": "DataArrayCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L1146-L1155",
+    "method": "__delitem__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__delitem__` in `DataArrayCoordinates` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayCoordinates.__delitem__"
+  },
+  {
+    "class": "DataArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/dataarray.py",
+    "line_range": "L416-L478",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `DataArray` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArray.__init__"
+  },
+  {
+    "class": "Dataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/dataset.py",
+    "line_range": "L378-L410",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `Dataset` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Dataset.__init__"
+  },
+  {
+    "class": "_LocIndexer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/dataset_utils.py",
+    "line_range": "L25-L28",
+    "method": "__getitem__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `_LocIndexer` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "_LocIndexer.__getitem__"
+  },
+  {
+    "class": "DataVariables",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/dataset_variables.py",
+    "line_range": "L36-L39",
+    "method": "__getitem__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `DataVariables` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataVariables.__getitem__"
+  },
+  {
+    "class": "DatasetView",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/datatree.py",
+    "line_range": "L254-L260",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `DatasetView` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetView.__init__"
+  },
+  {
+    "class": "DataTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/datatree.py",
+    "line_range": "L563-L573",
+    "method": "_pre_attach",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `_pre_attach` in `DataTree` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataTree._pre_attach"
+  },
+  {
+    "class": "PandasExtensionArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/extension_array.py",
+    "line_range": "L250-L260",
+    "method": "__post_init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__post_init__` in `PandasExtensionArray` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasExtensionArray.__post_init__"
+  },
+  {
+    "class": "_DummyGroup",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L214-L219",
+    "method": "__array__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__array__` in `_DummyGroup` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "_DummyGroup.__array__"
+  },
+  {
+    "class": "ResolvedGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L322-L367",
+    "method": "__post_init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__post_init__` in `ResolvedGrouper` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ResolvedGrouper.__post_init__"
+  },
+  {
+    "class": "GroupBy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L638-L696",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `GroupBy` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "GroupBy.__init__"
+  },
+  {
+    "class": "DataArrayGroupByBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L1655-L1719",
+    "method": "reduce",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `reduce` in `DataArrayGroupByBase` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayGroupByBase.reduce"
+  },
+  {
+    "class": "DatasetGroupByBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L1819-L1885",
+    "method": "reduce",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `reduce` in `DatasetGroupByBase` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetGroupByBase.reduce"
+  },
+  {
+    "class": "PandasIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L698-L748",
+    "method": "from_variables",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `from_variables` in `PandasIndex` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasIndex.from_variables"
+  },
+  {
+    "class": "PandasMultiIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1030-L1048",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `PandasMultiIndex` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasMultiIndex.__init__"
+  },
+  {
+    "class": "CoordinateTransformIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1525-L1530",
+    "method": "isel",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `isel` in `CoordinateTransformIndex` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CoordinateTransformIndex.isel"
+  },
+  {
+    "class": "Indexes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1705-L1749",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `Indexes` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Indexes.__init__"
+  },
+  {
+    "class": "BasicIndexer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L487-L503",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `BasicIndexer` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BasicIndexer.__init__"
+  },
+  {
+    "class": "OuterIndexer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L517-L547",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `OuterIndexer` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "OuterIndexer.__init__"
+  },
+  {
+    "class": "VectorizedIndexer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L562-L591",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `VectorizedIndexer` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "VectorizedIndexer.__init__"
+  },
+  {
+    "class": "ExplicitlyIndexedNDArrayMixin",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L615-L616",
+    "method": "get_duck_array",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `get_duck_array` in `ExplicitlyIndexedNDArrayMixin` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ExplicitlyIndexedNDArrayMixin.get_duck_array"
+  },
+  {
+    "class": "LazilyIndexedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L796-L800",
+    "method": "_vindex_set",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `_vindex_set` in `LazilyIndexedArray` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "LazilyIndexedArray._vindex_set"
+  },
+  {
+    "class": "LazilyVectorizedIndexedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L885-L889",
+    "method": "__setitem__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__setitem__` in `LazilyVectorizedIndexedArray` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "LazilyVectorizedIndexedArray.__setitem__"
+  },
+  {
+    "class": "NumpyIndexingAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L1687-L1694",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `NumpyIndexingAdapter` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NumpyIndexingAdapter.__init__"
+  },
+  {
+    "class": "NdArrayLikeIndexingAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L1752-L1758",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `NdArrayLikeIndexingAdapter` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NdArrayLikeIndexingAdapter.__init__"
+  },
+  {
+    "class": "ArrayApiIndexingAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L1766-L1772",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `ArrayApiIndexingAdapter` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ArrayApiIndexingAdapter.__init__"
+  },
+  {
+    "class": "DaskIndexingAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L1844-L1873",
+    "method": "_vindex_get",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `_vindex_get` in `DaskIndexingAdapter` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DaskIndexingAdapter._vindex_get"
+  },
+  {
+    "class": "CoordinateTransformIndexingAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L2204-L2207",
+    "method": "_oindex_set",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `_oindex_set` in `CoordinateTransformIndexingAdapter` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CoordinateTransformIndexingAdapter._oindex_set"
+  },
+  {
+    "class": "NumpyInterpolator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/missing.py",
+    "line_range": "L100-L124",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `NumpyInterpolator` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NumpyInterpolator.__init__"
+  },
+  {
+    "class": "ScipyInterpolator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/missing.py",
+    "line_range": "L145-L196",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `ScipyInterpolator` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyInterpolator.__init__"
+  },
+  {
+    "class": "SplineInterpolator",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/missing.py",
+    "line_range": "L207-L230",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `SplineInterpolator` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "SplineInterpolator.__init__"
+  },
+  {
+    "class": "Resample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/resample.py",
+    "line_range": "L36-L50",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `Resample` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Resample.__init__"
+  },
+  {
+    "class": "NodePath",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/treenode.py",
+    "line_range": "L27-L38",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `NodePath` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NodePath.__init__"
+  },
+  {
+    "class": "NamedNode",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/treenode.py",
+    "line_range": "L698-L706",
+    "method": "name",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `name` in `NamedNode` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NamedNode.name"
+  },
+  {
+    "class": "FilteredMapping",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/utils.py",
+    "line_range": "L594-L597",
+    "method": "__getitem__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `FilteredMapping` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "FilteredMapping.__getitem__"
+  },
+  {
+    "class": "HiddenKeyDict",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/utils.py",
+    "line_range": "L875-L877",
+    "method": "_raise_if_hidden",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `_raise_if_hidden` in `HiddenKeyDict` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "HiddenKeyDict._raise_if_hidden"
+  },
+  {
+    "class": "Variable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/variable.py",
+    "line_range": "L584-L607",
+    "method": "to_dict",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `to_dict` in `Variable` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Variable.to_dict"
+  },
+  {
+    "class": "IndexVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/variable.py",
+    "line_range": "L2752-L2759",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `IndexVariable` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "IndexVariable.__init__"
+  },
+  {
+    "class": "Resampler",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L187-L206",
+    "method": "compute_chunks",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `compute_chunks` in `Resampler` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Resampler.compute_chunks"
+  },
+  {
+    "class": "UniqueGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L239-L261",
+    "method": "factorize",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `factorize` in `UniqueGrouper` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "UniqueGrouper.factorize"
+  },
+  {
+    "class": "BinGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L401-L403",
+    "method": "__post_init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__post_init__` in `BinGrouper` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BinGrouper.__post_init__"
+  },
+  {
+    "class": "TimeResampler",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L520-L551",
+    "method": "_init_properties",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `_init_properties` in `TimeResampler` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TimeResampler._init_properties"
+  },
+  {
+    "class": "SeasonGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L829-L867",
+    "method": "factorize",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `factorize` in `SeasonGrouper` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "SeasonGrouper.factorize"
+  },
+  {
+    "class": "SeasonResampler",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L901-L914",
+    "method": "__post_init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__post_init__` in `SeasonResampler` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "SeasonResampler.__post_init__"
+  },
+  {
+    "class": "TreeAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/nd_point_index.py",
+    "line_range": "L60-L69",
+    "method": "equals",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `equals` in `TreeAdapter` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TreeAdapter.equals"
+  },
+  {
+    "class": "ScipyKDTreeAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/nd_point_index.py",
+    "line_range": "L77-L86",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `ScipyKDTreeAdapter` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyKDTreeAdapter.__init__"
+  },
+  {
+    "class": "NDPointIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/nd_point_index.py",
+    "line_range": "L253-L280",
+    "method": "from_variables",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `from_variables` in `NDPointIndex` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NDPointIndex.from_variables"
+  },
+  {
+    "class": "RangeIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/range_index.py",
+    "line_range": "L194-L285",
+    "method": "arange",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `arange` in `RangeIndex` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "RangeIndex.arange"
+  },
+  {
+    "class": "NamedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/core.py",
+    "line_range": "L264-L271",
+    "method": "__init_subclass__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init_subclass__` in `NamedArray` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NamedArray.__init_subclass__"
+  },
+  {
+    "class": "DaskManager",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/daskmanager.py",
+    "line_range": "L253-L266",
+    "method": "shuffle",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `shuffle` in `DaskManager` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DaskManager.shuffle"
+  },
+  {
+    "class": "ChunkManagerEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/parallelcompat.py",
+    "line_range": "L216-L218",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `ChunkManagerEntrypoint` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ChunkManagerEntrypoint.__init__"
+  },
+  {
+    "class": "FacetGrid",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/plot/facetgrid.py",
+    "line_range": "L127-L278",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `FacetGrid` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "FacetGrid.__init__"
+  },
+  {
+    "class": "_Normalize",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/plot/utils.py",
+    "line_range": "L1494-L1538",
+    "method": "values",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `values` in `_Normalize` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "_Normalize.values"
+  },
+  {
+    "class": "Aligner",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/structure/alignment.py",
+    "line_range": "L179-L231",
+    "method": "__init__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__init__` in `Aligner` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Aligner.__init__"
+  },
+  {
+    "class": "InaccessibleArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/arrays.py",
+    "line_range": "L24-L25",
+    "method": "get_duck_array",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `get_duck_array` in `InaccessibleArray` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "InaccessibleArray.get_duck_array"
+  },
+  {
+    "class": "FirstElementAccessibleArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/arrays.py",
+    "line_range": "L37-L41",
+    "method": "__getitem__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `FirstElementAccessibleArray` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "FirstElementAccessibleArray.__getitem__"
+  },
+  {
+    "class": "DuckArrayWrapper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/arrays.py",
+    "line_range": "L68-L71",
+    "method": "__array__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__array__` in `DuckArrayWrapper` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DuckArrayWrapper.__array__"
+  },
+  {
+    "class": "ZarrBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2665-L2666",
+    "method": "create_zarr_target",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `create_zarr_target` in `ZarrBase` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrBase.create_zarr_target"
+  },
+  {
+    "class": "CustomArrayIndexable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_namedarray.py",
+    "line_range": "L74-L85",
+    "method": "__getitem__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__getitem__` in `CustomArrayIndexable` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CustomArrayIndexable.__getitem__"
+  },
+  {
+    "class": "TestVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L1669-L1735",
+    "method": "test_set_dims_without_broadcast",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `test_set_dims_without_broadcast` in `TestVariable` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariable.test_set_dims_without_broadcast"
+  },
+  {
+    "class": "_ufunc_wrapper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/ufuncs.py",
+    "line_range": "L52-L53",
+    "method": "__call__",
+    "principle": "LSP",
+    "reasoning": "Mock LLM flagged `__call__` in `_ufunc_wrapper` as a potential LSP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "_ufunc_wrapper.__call__"
+  }
+]

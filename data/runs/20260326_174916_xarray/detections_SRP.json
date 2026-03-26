@@ -1,0 +1,2272 @@
+[
+  {
+    "class": "AbstractDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L331-L333",
+    "method": "get_child_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `get_child_store` in `AbstractDataStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractDataStore.get_child_store"
+  },
+  {
+    "class": "AbstractWritableDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L437-L470",
+    "method": "encode",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `encode` in `AbstractWritableDataStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractWritableDataStore.encode"
+  },
+  {
+    "class": "BackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/common.py",
+    "line_range": "L777-L792",
+    "method": "open_dataset",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `open_dataset` in `BackendEntrypoint` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BackendEntrypoint.open_dataset"
+  },
+  {
+    "class": "H5NetCDFStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/h5netcdf_.py",
+    "line_range": "L157-L169",
+    "method": "get_child_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `get_child_store` in `H5NetCDFStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "H5NetCDFStore.get_child_store"
+  },
+  {
+    "class": "H5netcdfBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/h5netcdf_.py",
+    "line_range": "L512-L528",
+    "method": "guess_can_open",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `guess_can_open` in `H5netcdfBackendEntrypoint` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "H5netcdfBackendEntrypoint.guess_can_open"
+  },
+  {
+    "class": "InMemoryDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/memory.py",
+    "line_range": "L24-L25",
+    "method": "get_attrs",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `get_attrs` in `InMemoryDataStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "InMemoryDataStore.get_attrs"
+  },
+  {
+    "class": "NetCDF4DataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/netCDF4_.py",
+    "line_range": "L435-L444",
+    "method": "get_child_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `get_child_store` in `NetCDF4DataStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDF4DataStore.get_child_store"
+  },
+  {
+    "class": "NetCDF4BackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/netCDF4_.py",
+    "line_range": "L708-L747",
+    "method": "guess_can_open",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `guess_can_open` in `NetCDF4BackendEntrypoint` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDF4BackendEntrypoint.guess_can_open"
+  },
+  {
+    "class": "PydapDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/pydap_.py",
+    "line_range": "L104-L152",
+    "method": "open",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `open` in `PydapDataStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PydapDataStore.open"
+  },
+  {
+    "class": "PydapBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/pydap_.py",
+    "line_range": "L252-L255",
+    "method": "guess_can_open",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `guess_can_open` in `PydapBackendEntrypoint` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PydapBackendEntrypoint.guess_can_open"
+  },
+  {
+    "class": "ScipyDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/scipy_.py",
+    "line_range": "L234-L235",
+    "method": "ds",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `ds` in `ScipyDataStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ScipyDataStore.ds"
+  },
+  {
+    "class": "ZarrStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/zarr.py",
+    "line_range": "L628-L694",
+    "method": "open_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `open_store` in `ZarrStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrStore.open_store"
+  },
+  {
+    "class": "ZarrBackendEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/backends/zarr.py",
+    "line_range": "L1648-L1655",
+    "method": "guess_can_open",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `guess_can_open` in `ZarrBackendEntrypoint` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrBackendEntrypoint.guess_can_open"
+  },
+  {
+    "class": "BaseCFTimeOffset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftime_offsets.py",
+    "line_range": "L121-L122",
+    "method": "rule_code",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `rule_code` in `BaseCFTimeOffset` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BaseCFTimeOffset.rule_code"
+  },
+  {
+    "class": "CFTimeIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/cftimeindex.py",
+    "line_range": "L411-L416",
+    "method": "get_loc",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `get_loc` in `CFTimeIndex` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFTimeIndex.get_loc"
+  },
+  {
+    "class": "_CFTimeFrequencyInferer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/coding/frequencies.py",
+    "line_range": "L123-L152",
+    "method": "get_freq",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `get_freq` in `_CFTimeFrequencyInferer` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "_CFTimeFrequencyInferer.get_freq"
+  },
+  {
+    "class": "_UFuncSignature",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/apply_ufunc.py",
+    "line_range": "L93-L98",
+    "method": "all_input_core_dims",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `all_input_core_dims` in `_UFuncSignature` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "_UFuncSignature.all_input_core_dims"
+  },
+  {
+    "class": "RollingExp",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/rolling_exp.py",
+    "line_range": "L94-L130",
+    "method": "mean",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `mean` in `RollingExp` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "RollingExp.mean"
+  },
+  {
+    "class": "Weighted",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/computation/weighted.py",
+    "line_range": "L456-L464",
+    "method": "sum_of_weights",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `sum_of_weights` in `Weighted` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Weighted.sum_of_weights"
+  },
+  {
+    "class": "DataTreeAggregations",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/_aggregations.py",
+    "line_range": "L25-L35",
+    "method": "reduce",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `reduce` in `DataTreeAggregations` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataTreeAggregations.reduce"
+  },
+  {
+    "class": "DatasetAggregations",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/_aggregations.py",
+    "line_range": "L1333-L1343",
+    "method": "reduce",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `reduce` in `DatasetAggregations` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetAggregations.reduce"
+  },
+  {
+    "class": "DataArrayAggregations",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/_aggregations.py",
+    "line_range": "L2535-L2545",
+    "method": "reduce",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `reduce` in `DataArrayAggregations` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayAggregations.reduce"
+  },
+  {
+    "class": "DatasetGroupByAggregations",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/_aggregations.py",
+    "line_range": "L3639-L3649",
+    "method": "reduce",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `reduce` in `DatasetGroupByAggregations` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetGroupByAggregations.reduce"
+  },
+  {
+    "class": "DatasetResampleAggregations",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/_aggregations.py",
+    "line_range": "L5135-L5145",
+    "method": "reduce",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `reduce` in `DatasetResampleAggregations` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetResampleAggregations.reduce"
+  },
+  {
+    "class": "DataArrayGroupByAggregations",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/_aggregations.py",
+    "line_range": "L6631-L6641",
+    "method": "reduce",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `reduce` in `DataArrayGroupByAggregations` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayGroupByAggregations.reduce"
+  },
+  {
+    "class": "DataArrayResampleAggregations",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/_aggregations.py",
+    "line_range": "L8019-L8029",
+    "method": "reduce",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `reduce` in `DataArrayResampleAggregations` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayResampleAggregations.reduce"
+  },
+  {
+    "class": "DataTreeOpsMixin",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/_typed_ops.py",
+    "line_range": "L140-L141",
+    "method": "round",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `round` in `DataTreeOpsMixin` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataTreeOpsMixin.round"
+  },
+  {
+    "class": "DatasetOpsMixin",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/_typed_ops.py",
+    "line_range": "L448-L449",
+    "method": "round",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `round` in `DatasetOpsMixin` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetOpsMixin.round"
+  },
+  {
+    "class": "DataArrayOpsMixin",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/_typed_ops.py",
+    "line_range": "L822-L823",
+    "method": "round",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `round` in `DataArrayOpsMixin` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayOpsMixin.round"
+  },
+  {
+    "class": "VariableOpsMixin",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/_typed_ops.py",
+    "line_range": "L1250-L1251",
+    "method": "round",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `round` in `VariableOpsMixin` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "VariableOpsMixin.round"
+  },
+  {
+    "class": "DatetimeAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/accessor_dt.py",
+    "line_range": "L354-L385",
+    "method": "strftime",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `strftime` in `DatetimeAccessor` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatetimeAccessor.strftime"
+  },
+  {
+    "class": "TimedeltaAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/accessor_dt.py",
+    "line_range": "L626-L628",
+    "method": "days",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `days` in `TimedeltaAccessor` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TimedeltaAccessor.days"
+  },
+  {
+    "class": "StringAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/accessor_str.py",
+    "line_range": "L283-L291",
+    "method": "len",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `len` in `StringAccessor` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "StringAccessor.len"
+  },
+  {
+    "class": "AbstractArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/common.py",
+    "line_range": "L218-L218",
+    "method": "get_axis_num",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `get_axis_num` in `AbstractArray` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractArray.get_axis_num"
+  },
+  {
+    "class": "DataWithCoords",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/common.py",
+    "line_range": "L429-L460",
+    "method": "squeeze",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `squeeze` in `DataWithCoords` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataWithCoords.squeeze"
+  },
+  {
+    "class": "CoordinateTransform",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinate_transform.py",
+    "line_range": "L36-L52",
+    "method": "forward",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `forward` in `CoordinateTransform` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CoordinateTransform.forward"
+  },
+  {
+    "class": "AbstractCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L66-L67",
+    "method": "dims",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dims` in `AbstractCoordinates` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "AbstractCoordinates.dims"
+  },
+  {
+    "class": "Coordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L376-L402",
+    "method": "from_xindex",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `from_xindex` in `Coordinates` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Coordinates.from_xindex"
+  },
+  {
+    "class": "DatasetCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L896-L898",
+    "method": "dims",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dims` in `DatasetCoordinates` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetCoordinates.dims"
+  },
+  {
+    "class": "DataTreeCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L1006-L1008",
+    "method": "dims",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dims` in `DataTreeCoordinates` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataTreeCoordinates.dims"
+  },
+  {
+    "class": "DataArrayCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/coordinates.py",
+    "line_range": "L1097-L1098",
+    "method": "dims",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dims` in `DataArrayCoordinates` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayCoordinates.dims"
+  },
+  {
+    "class": "DataArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/dataarray.py",
+    "line_range": "L652-L692",
+    "method": "to_dataset",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `to_dataset` in `DataArray` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArray.to_dataset"
+  },
+  {
+    "class": "Dataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/dataset.py",
+    "line_range": "L418-L427",
+    "method": "load_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `load_store` in `Dataset` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Dataset.load_store"
+  },
+  {
+    "class": "DatasetView",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/datatree.py",
+    "line_range": "L293-L298",
+    "method": "update",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `update` in `DatasetView` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetView.update"
+  },
+  {
+    "class": "DataTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/datatree.py",
+    "line_range": "L674-L687",
+    "method": "dataset",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dataset` in `DataTree` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataTree.dataset"
+  },
+  {
+    "class": "_DummyGroup",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L199-L200",
+    "method": "dims",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dims` in `_DummyGroup` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "_DummyGroup.dims"
+  },
+  {
+    "class": "ResolvedGrouper",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L311-L312",
+    "method": "full_index",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `full_index` in `ResolvedGrouper` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ResolvedGrouper.full_index"
+  },
+  {
+    "class": "GroupBy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L699-L712",
+    "method": "sizes",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `sizes` in `GroupBy` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "GroupBy.sizes"
+  },
+  {
+    "class": "DataArrayGroupByBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L1516-L1521",
+    "method": "dims",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dims` in `DataArrayGroupByBase` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayGroupByBase.dims"
+  },
+  {
+    "class": "DatasetGroupByBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/groupby.py",
+    "line_range": "L1735-L1741",
+    "method": "dims",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dims` in `DatasetGroupByBase` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetGroupByBase.dims"
+  },
+  {
+    "class": "Index",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L67-L96",
+    "method": "from_variables",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `from_variables` in `Index` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Index.from_variables"
+  },
+  {
+    "class": "PandasIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L698-L748",
+    "method": "from_variables",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `from_variables` in `PandasIndex` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasIndex.from_variables"
+  },
+  {
+    "class": "PandasMultiIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1059-L1075",
+    "method": "from_variables",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `from_variables` in `PandasMultiIndex` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasMultiIndex.from_variables"
+  },
+  {
+    "class": "CoordinateTransformIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1503-L1523",
+    "method": "create_variables",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_variables` in `CoordinateTransformIndex` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CoordinateTransformIndex.create_variables"
+  },
+  {
+    "class": "Indexes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexes.py",
+    "line_range": "L1774-L1775",
+    "method": "variables",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `variables` in `Indexes` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Indexes.variables"
+  },
+  {
+    "class": "PandasIndexingAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L1935-L1936",
+    "method": "dtype",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dtype` in `PandasIndexingAdapter` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PandasIndexingAdapter.dtype"
+  },
+  {
+    "class": "CoordinateTransformIndexingAdapter",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/indexing.py",
+    "line_range": "L2179-L2180",
+    "method": "dtype",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dtype` in `CoordinateTransformIndexingAdapter` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CoordinateTransformIndexingAdapter.dtype"
+  },
+  {
+    "class": "Resample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/resample.py",
+    "line_range": "L65-L107",
+    "method": "shuffle_to_chunks",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `shuffle_to_chunks` in `Resample` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Resample.shuffle_to_chunks"
+  },
+  {
+    "class": "DataArrayResample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/resample.py",
+    "line_range": "L260-L303",
+    "method": "reduce",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `reduce` in `DataArrayResample` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayResample.reduce"
+  },
+  {
+    "class": "DatasetResample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/resample.py",
+    "line_range": "L400-L449",
+    "method": "map",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `map` in `DatasetResample` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetResample.map"
+  },
+  {
+    "class": "TreeNode",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/treenode.py",
+    "line_range": "L86-L88",
+    "method": "parent",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `parent` in `TreeNode` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TreeNode.parent"
+  },
+  {
+    "class": "NamedNode",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/treenode.py",
+    "line_range": "L693-L695",
+    "method": "name",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `name` in `NamedNode` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NamedNode.name"
+  },
+  {
+    "class": "Alignable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/types.py",
+    "line_range": "L120-L120",
+    "method": "dims",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dims` in `Alignable` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Alignable.dims"
+  },
+  {
+    "class": "BaseBuffer",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/types.py",
+    "line_range": "L318-L320",
+    "method": "mode",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `mode` in `BaseBuffer` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "BaseBuffer.mode"
+  },
+  {
+    "class": "FrozenMappingWarningOnValuesAccess",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/utils.py",
+    "line_range": "L552-L552",
+    "method": "get",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `get` in `FrozenMappingWarningOnValuesAccess` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "FrozenMappingWarningOnValuesAccess.get"
+  },
+  {
+    "class": "Variable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/variable.py",
+    "line_range": "L441-L465",
+    "method": "data",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `data` in `Variable` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Variable.data"
+  },
+  {
+    "class": "IndexVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/core/variable.py",
+    "line_range": "L2769-L2771",
+    "method": "load",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `load` in `IndexVariable` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "IndexVariable.load"
+  },
+  {
+    "class": "TimeResampler",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/groupers.py",
+    "line_range": "L511-L518",
+    "method": "reset",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `reset` in `TimeResampler` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TimeResampler.reset"
+  },
+  {
+    "class": "NDPointIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/nd_point_index.py",
+    "line_range": "L253-L280",
+    "method": "from_variables",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `from_variables` in `NDPointIndex` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NDPointIndex.from_variables"
+  },
+  {
+    "class": "RangeCoordinateTransform",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/range_index.py",
+    "line_range": "L46-L47",
+    "method": "coord_name",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `coord_name` in `RangeCoordinateTransform` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "RangeCoordinateTransform.coord_name"
+  },
+  {
+    "class": "RangeIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/indexes/range_index.py",
+    "line_range": "L164-L191",
+    "method": "equals",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `equals` in `RangeIndex` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "RangeIndex.equals"
+  },
+  {
+    "class": "NamedArrayAggregations",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/_aggregations.py",
+    "line_range": "L17-L26",
+    "method": "reduce",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `reduce` in `NamedArrayAggregations` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NamedArrayAggregations.reduce"
+  },
+  {
+    "class": "NamedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/core.py",
+    "line_range": "L372-L402",
+    "method": "copy",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `copy` in `NamedArray` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NamedArray.copy"
+  },
+  {
+    "class": "DaskManager",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/daskmanager.py",
+    "line_range": "L40-L41",
+    "method": "is_chunked_array",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `is_chunked_array` in `DaskManager` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DaskManager.is_chunked_array"
+  },
+  {
+    "class": "ChunkedArrayMixinProtocol",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/parallelcompat.py",
+    "line_range": "L34-L34",
+    "method": "rechunk",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `rechunk` in `ChunkedArrayMixinProtocol` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ChunkedArrayMixinProtocol.rechunk"
+  },
+  {
+    "class": "ChunkManagerEntrypoint",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/namedarray/parallelcompat.py",
+    "line_range": "L220-L238",
+    "method": "is_chunked_array",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `is_chunked_array` in `ChunkManagerEntrypoint` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ChunkManagerEntrypoint.is_chunked_array"
+  },
+  {
+    "class": "DataArrayPlotAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/plot/accessor.py",
+    "line_range": "L51-L54",
+    "method": "hist",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `hist` in `DataArrayPlotAccessor` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DataArrayPlotAccessor.hist"
+  },
+  {
+    "class": "DatasetPlotAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/plot/accessor.py",
+    "line_range": "L927-L964",
+    "method": "scatter",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `scatter` in `DatasetPlotAccessor` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetPlotAccessor.scatter"
+  },
+  {
+    "class": "FacetGrid",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/plot/facetgrid.py",
+    "line_range": "L281-L290",
+    "method": "axes",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `axes` in `FacetGrid` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "FacetGrid.axes"
+  },
+  {
+    "class": "_Normalize",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/plot/utils.py",
+    "line_range": "L1425-L1426",
+    "method": "data",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `data` in `_Normalize` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "_Normalize.data"
+  },
+  {
+    "class": "Aligner",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/structure/alignment.py",
+    "line_range": "L289-L327",
+    "method": "find_matching_indexes",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `find_matching_indexes` in `Aligner` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Aligner.find_matching_indexes"
+  },
+  {
+    "class": "ConcatenatableArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/arrays.py",
+    "line_range": "L164-L165",
+    "method": "dtype",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dtype` in `ConcatenatableArray` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ConcatenatableArray.dtype"
+  },
+  {
+    "class": "XYIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/indexes.py",
+    "line_range": "L30-L34",
+    "method": "from_variables",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `from_variables` in `XYIndex` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "XYIndex.from_variables"
+  },
+  {
+    "class": "TestDatetimeAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_accessor_dt.py",
+    "line_range": "L24-L44",
+    "method": "setup",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setup` in `TestDatetimeAccessor` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatetimeAccessor.setup"
+  },
+  {
+    "class": "TestTimedeltaAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_accessor_dt.py",
+    "line_range": "L304-L324",
+    "method": "setup",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setup` in `TestTimedeltaAccessor` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestTimedeltaAccessor.setup"
+  },
+  {
+    "class": "TestAssertIdenticalXindexes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_assertions.py",
+    "line_range": "L266-L287",
+    "method": "dataset_with_extra_coord",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `dataset_with_extra_coord` in `TestAssertIdenticalXindexes` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAssertIdenticalXindexes.dataset_with_extra_coord"
+  },
+  {
+    "class": "DatasetIOBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L454-L455",
+    "method": "create_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_store` in `DatasetIOBase` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DatasetIOBase.create_store"
+  },
+  {
+    "class": "CFEncodedBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L1083-L1093",
+    "method": "test_roundtrip_bytes_with_fill_value",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_roundtrip_bytes_with_fill_value` in `CFEncodedBase` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "CFEncodedBase.test_roundtrip_bytes_with_fill_value"
+  },
+  {
+    "class": "NetCDF4Base",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L1747-L1770",
+    "method": "test_open_group",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_open_group` in `NetCDF4Base` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDF4Base.test_open_group"
+  },
+  {
+    "class": "TestNetCDF4Data",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2286-L2289",
+    "method": "create_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_store` in `TestNetCDF4Data` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNetCDF4Data.create_store"
+  },
+  {
+    "class": "InMemoryNetCDF",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2517-L2521",
+    "method": "test_roundtrip_via_memoryview",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_roundtrip_via_memoryview` in `InMemoryNetCDF` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "InMemoryNetCDF.test_roundtrip_via_memoryview"
+  },
+  {
+    "class": "TestNetCDF4ViaDaskData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2583-L2594",
+    "method": "roundtrip",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `roundtrip` in `TestNetCDF4ViaDaskData` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNetCDF4ViaDaskData.roundtrip"
+  },
+  {
+    "class": "ZarrBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L2665-L2666",
+    "method": "create_zarr_target",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_zarr_target` in `ZarrBase` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "ZarrBase.create_zarr_target"
+  },
+  {
+    "class": "TestInstrumentedZarrStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L3893-L3903",
+    "method": "create_zarr_target",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_zarr_target` in `TestInstrumentedZarrStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestInstrumentedZarrStore.create_zarr_target"
+  },
+  {
+    "class": "TestZarrWriteEmpty",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L4437-L4440",
+    "method": "temp_dir",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `temp_dir` in `TestZarrWriteEmpty` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestZarrWriteEmpty.temp_dir"
+  },
+  {
+    "class": "TestScipyFileObject",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L4685-L4687",
+    "method": "create_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_store` in `TestScipyFileObject` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestScipyFileObject.create_store"
+  },
+  {
+    "class": "TestScipyFilePath",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L4743-L4746",
+    "method": "create_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_store` in `TestScipyFilePath` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestScipyFilePath.create_store"
+  },
+  {
+    "class": "TestGenericNetCDFData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L4864-L4866",
+    "method": "test_write_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_write_store` in `TestGenericNetCDFData` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestGenericNetCDFData.test_write_store"
+  },
+  {
+    "class": "TestH5NetCDFData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L4973-L4975",
+    "method": "create_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_store` in `TestH5NetCDFData` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestH5NetCDFData.create_store"
+  },
+  {
+    "class": "TestH5NetCDFFileObject",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L5207-L5222",
+    "method": "test_open_badbytes",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_open_badbytes` in `TestH5NetCDFFileObject` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestH5NetCDFFileObject.test_open_badbytes"
+  },
+  {
+    "class": "TestOpenMFDatasetWithDataVarsAndCoordsKw",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L5559-L5572",
+    "method": "setup_files_and_datasets",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setup_files_and_datasets` in `TestOpenMFDatasetWithDataVarsAndCoordsKw` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestOpenMFDatasetWithDataVarsAndCoordsKw.setup_files_and_datasets"
+  },
+  {
+    "class": "TestDask",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L5884-L5885",
+    "method": "create_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_store` in `TestDask` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDask.create_store"
+  },
+  {
+    "class": "TestPydap",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L6531-L6542",
+    "method": "convert_to_pydap_dataset",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `convert_to_pydap_dataset` in `TestPydap` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPydap.convert_to_pydap_dataset"
+  },
+  {
+    "class": "TestPydapOnline",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L6609-L6618",
+    "method": "create_dap2_datasets",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_dap2_datasets` in `TestPydapOnline` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPydapOnline.create_dap2_datasets"
+  },
+  {
+    "class": "TestDataArrayToNetCDF",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L6822-L6829",
+    "method": "test_dataarray_to_netcdf_no_name",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_dataarray_to_netcdf_no_name` in `TestDataArrayToNetCDF` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayToNetCDF.test_dataarray_to_netcdf_no_name"
+  },
+  {
+    "class": "TestDataArrayToZarr",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L6881-L6885",
+    "method": "skip_if_zarr_python_3_and_zip_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `skip_if_zarr_python_3_and_zip_store` in `TestDataArrayToZarr` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayToZarr.skip_if_zarr_python_3_and_zip_store"
+  },
+  {
+    "class": "TestNCZarr",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L7592-L7593",
+    "method": "netcdfc_version",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `netcdfc_version` in `TestNCZarr` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNCZarr.netcdfc_version"
+  },
+  {
+    "class": "TestZarrRegionAuto",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends.py",
+    "line_range": "L7695-L7697",
+    "method": "create_zarr_target",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_zarr_target` in `TestZarrRegionAuto` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestZarrRegionAuto.create_zarr_target"
+  },
+  {
+    "class": "TestPreferredChunks",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends_api.py",
+    "line_range": "L185-L198",
+    "method": "create_dataset",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_dataset` in `TestPreferredChunks` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPreferredChunks.create_dataset"
+  },
+  {
+    "class": "NetCDFIOBase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends_datatree.py",
+    "line_range": "L210-L217",
+    "method": "test_to_netcdf",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_to_netcdf` in `NetCDFIOBase` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NetCDFIOBase.test_to_netcdf"
+  },
+  {
+    "class": "TestGenericNetCDFIO",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends_datatree.py",
+    "line_range": "L386-L393",
+    "method": "test_open_netcdf3",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_open_netcdf3` in `TestGenericNetCDFIO` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestGenericNetCDFIO.test_open_netcdf3"
+  },
+  {
+    "class": "TestPyDAPDatatreeIO",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends_datatree.py",
+    "line_range": "L583-L596",
+    "method": "test_open_datatree_unaligned_hierarchy",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_open_datatree_unaligned_hierarchy` in `TestPyDAPDatatreeIO` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPyDAPDatatreeIO.test_open_datatree_unaligned_hierarchy"
+  },
+  {
+    "class": "TestZarrDatatreeIO",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_backends_datatree.py",
+    "line_range": "L686-L692",
+    "method": "test_to_zarr",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_to_zarr` in `TestZarrDatatreeIO` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestZarrDatatreeIO.test_to_zarr"
+  },
+  {
+    "class": "TestTileIDsFromNestedList",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L44-L52",
+    "method": "test_1d",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_1d` in `TestTileIDsFromNestedList` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestTileIDsFromNestedList.test_1d"
+  },
+  {
+    "class": "TestTileIDsFromCoords",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L162-L169",
+    "method": "test_1d",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_1d` in `TestTileIDsFromCoords` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestTileIDsFromCoords.test_1d"
+  },
+  {
+    "class": "TestNestedCombine",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L395-L426",
+    "method": "test_nested_concat",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_nested_concat` in `TestNestedCombine` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNestedCombine.test_nested_concat"
+  },
+  {
+    "class": "TestCombineDatasetsbyCoords",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L790-L802",
+    "method": "test_combine_by_coords",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_combine_by_coords` in `TestCombineDatasetsbyCoords` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCombineDatasetsbyCoords.test_combine_by_coords"
+  },
+  {
+    "class": "TestCombineMixedObjectsbyCoords",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L1179-L1194",
+    "method": "test_combine_by_coords_mixed_unnamed_dataarrays",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_combine_by_coords_mixed_unnamed_dataarrays` in `TestCombineMixedObjectsbyCoords` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCombineMixedObjectsbyCoords.test_combine_by_coords_mixed_unnamed_dataarrays"
+  },
+  {
+    "class": "TestNewDefaults",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_combine.py",
+    "line_range": "L1260-L1267",
+    "method": "test_concat_along_existing_dim",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_concat_along_existing_dim` in `TestNewDefaults` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNewDefaults.test_concat_along_existing_dim"
+  },
+  {
+    "class": "TestConcatDataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_concat.py",
+    "line_range": "L495-L499",
+    "method": "data",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `data` in `TestConcatDataset` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestConcatDataset.data"
+  },
+  {
+    "class": "TestConcatDataArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_concat.py",
+    "line_range": "L1174-L1217",
+    "method": "test_concat",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_concat` in `TestConcatDataArray` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestConcatDataArray.test_concat"
+  },
+  {
+    "class": "TestNewDefaults",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_concat.py",
+    "line_range": "L1495-L1513",
+    "method": "test_concat_second_empty_with_scalar_data_var_only_on_first",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_concat_second_empty_with_scalar_data_var_only_on_first` in `TestNewDefaults` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNewDefaults.test_concat_second_empty_with_scalar_data_var_only_on_first"
+  },
+  {
+    "class": "TestConcatDataTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_concat.py",
+    "line_range": "L1642-L1649",
+    "method": "test_concat_datatree_along_existing_dim",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_concat_datatree_along_existing_dim` in `TestConcatDataTree` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestConcatDataTree.test_concat_datatree_along_existing_dim"
+  },
+  {
+    "class": "TestEncodeCFVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_conventions.py",
+    "line_range": "L127-L138",
+    "method": "test_incompatible_attributes",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_incompatible_attributes` in `TestEncodeCFVariable` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestEncodeCFVariable.test_incompatible_attributes"
+  },
+  {
+    "class": "TestDecodeCF",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_conventions.py",
+    "line_range": "L272-L288",
+    "method": "test_dataset",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_dataset` in `TestDecodeCF` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDecodeCF.test_dataset"
+  },
+  {
+    "class": "TestCFEncodedDataStore",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_conventions.py",
+    "line_range": "L588-L589",
+    "method": "create_store",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `create_store` in `TestCFEncodedDataStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCFEncodedDataStore.create_store"
+  },
+  {
+    "class": "TestCoordinates",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_coordinates.py",
+    "line_range": "L19-L22",
+    "method": "test_init_noindex",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_init_noindex` in `TestCoordinates` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCoordinates.test_init_noindex"
+  },
+  {
+    "class": "TestVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dask.py",
+    "line_range": "L73-L74",
+    "method": "assertLazyAndIdentical",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `assertLazyAndIdentical` in `TestVariable` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariable.assertLazyAndIdentical"
+  },
+  {
+    "class": "TestDataArrayAndDataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dask.py",
+    "line_range": "L329-L330",
+    "method": "assertLazyAndIdentical",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `assertLazyAndIdentical` in `TestDataArrayAndDataset` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayAndDataset.assertLazyAndIdentical"
+  },
+  {
+    "class": "TestToDaskDataFrame",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dask.py",
+    "line_range": "L820-L847",
+    "method": "test_to_dask_dataframe",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_to_dask_dataframe` in `TestToDaskDataFrame` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestToDaskDataFrame.test_to_dask_dataframe"
+  },
+  {
+    "class": "TestDataArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L83-L96",
+    "method": "setup",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setup` in `TestDataArray` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArray.setup"
+  },
+  {
+    "class": "TestReduce1D",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L5107-L5142",
+    "method": "test_min",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_min` in `TestReduce1D` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestReduce1D.test_min"
+  },
+  {
+    "class": "TestReduce2D",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L5655-L5703",
+    "method": "test_min",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_min` in `TestReduce2D` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestReduce2D.test_min"
+  },
+  {
+    "class": "TestIrisConversion",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L7035-L7102",
+    "method": "test_to_and_from_iris",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_to_and_from_iris` in `TestIrisConversion` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIrisConversion.test_to_and_from_iris"
+  },
+  {
+    "class": "TestNumpyCoercion",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataarray.py",
+    "line_range": "L7485-L7490",
+    "method": "test_from_numpy",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_from_numpy` in `TestNumpyCoercion` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNumpyCoercion.test_from_numpy"
+  },
+  {
+    "class": "TestDataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataset.py",
+    "line_range": "L281-L342",
+    "method": "test_repr",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_repr` in `TestDataset` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataset.test_repr"
+  },
+  {
+    "class": "TestNumpyCoercion",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_dataset.py",
+    "line_range": "L8234-L8237",
+    "method": "test_from_numpy",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_from_numpy` in `TestNumpyCoercion` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNumpyCoercion.test_from_numpy"
+  },
+  {
+    "class": "TestTreeCreation",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L28-L33",
+    "method": "test_empty",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_empty` in `TestTreeCreation` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestTreeCreation.test_empty"
+  },
+  {
+    "class": "TestPaths",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L144-L151",
+    "method": "test_path_property",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_path_property` in `TestPaths` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPaths.test_path_property"
+  },
+  {
+    "class": "TestStoreDatasets",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L195-L202",
+    "method": "test_create_with_data",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_create_with_data` in `TestStoreDatasets` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestStoreDatasets.test_create_with_data"
+  },
+  {
+    "class": "TestGetItem",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L300-L308",
+    "method": "test_getitem_node",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_getitem_node` in `TestGetItem` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestGetItem.test_getitem_node"
+  },
+  {
+    "class": "TestUpdate",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L355-L360",
+    "method": "test_update",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_update` in `TestUpdate` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestUpdate.test_update"
+  },
+  {
+    "class": "TestCopy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L413-L438",
+    "method": "test_copy",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_copy` in `TestCopy` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCopy.test_copy"
+  },
+  {
+    "class": "TestSetItem",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L510-L517",
+    "method": "test_setitem_new_child_node",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_setitem_new_child_node` in `TestSetItem` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSetItem.test_setitem_new_child_node"
+  },
+  {
+    "class": "TestTreeFromDict",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L824-L830",
+    "method": "test_data_in_root",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_data_in_root` in `TestTreeFromDict` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestTreeFromDict.test_data_in_root"
+  },
+  {
+    "class": "TestDatasetView",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L1066-L1072",
+    "method": "test_view_contents",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_view_contents` in `TestDatasetView` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatasetView.test_view_contents"
+  },
+  {
+    "class": "TestAccess",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L1152-L1172",
+    "method": "test_attribute_access",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_attribute_access` in `TestAccess` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAccess.test_attribute_access"
+  },
+  {
+    "class": "TestRepr",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L1199-L1269",
+    "method": "test_repr_four_nodes",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_repr_four_nodes` in `TestRepr` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestRepr.test_repr_four_nodes"
+  },
+  {
+    "class": "TestInheritance",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L1544-L1559",
+    "method": "test_inherited_dims",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_inherited_dims` in `TestInheritance` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestInheritance.test_inherited_dims"
+  },
+  {
+    "class": "TestPipe",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L1818-L1822",
+    "method": "test_noop",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_noop` in `TestPipe` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPipe.test_noop"
+  },
+  {
+    "class": "TestSubset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L1998-L2019",
+    "method": "test_match",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_match` in `TestSubset` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSubset.test_match"
+  },
+  {
+    "class": "TestIndexing",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L2131-L2161",
+    "method": "test_isel_siblings",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_isel_siblings` in `TestIndexing` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIndexing.test_isel_siblings"
+  },
+  {
+    "class": "TestAggregations",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L2260-L2267",
+    "method": "test_reduce_method",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_reduce_method` in `TestAggregations` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAggregations.test_reduce_method"
+  },
+  {
+    "class": "TestOps",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L2339-L2347",
+    "method": "test_unary_op",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_unary_op` in `TestOps` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestOps.test_unary_op"
+  },
+  {
+    "class": "TestClose",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L2569-L2574",
+    "method": "test_close",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_close` in `TestClose` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestClose.test_close"
+  },
+  {
+    "class": "TestDask",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree.py",
+    "line_range": "L2619-L2636",
+    "method": "test_chunksizes",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_chunksizes` in `TestDask` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDask.test_chunksizes"
+  },
+  {
+    "class": "TestMapOverSubTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_datatree_mapping.py",
+    "line_range": "L15-L17",
+    "method": "test_no_trees_passed",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_no_trees_passed` in `TestMapOverSubTree` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestMapOverSubTree.test_no_trees_passed"
+  },
+  {
+    "class": "TestOps",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_duck_array_ops.py",
+    "line_range": "L100-L114",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestOps` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestOps.setUp"
+  },
+  {
+    "class": "TestArrayNotNullEquiv",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_duck_array_ops.py",
+    "line_range": "L339-L340",
+    "method": "test_equal",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_equal` in `TestArrayNotNullEquiv` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestArrayNotNullEquiv.test_equal"
+  },
+  {
+    "class": "TestTopLevelMethods",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_duck_array_wrapping.py",
+    "line_range": "L141-L144",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestTopLevelMethods` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestTopLevelMethods.setUp"
+  },
+  {
+    "class": "TestDataArrayMethods",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_duck_array_wrapping.py",
+    "line_range": "L203-L205",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestDataArrayMethods` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayMethods.setUp"
+  },
+  {
+    "class": "TestAccessor",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_extensions.py",
+    "line_range": "L23-L66",
+    "method": "test_register",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_register` in `TestAccessor` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAccessor.test_register"
+  },
+  {
+    "class": "TestFormatting",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_formatting.py",
+    "line_range": "L27-L56",
+    "method": "test_get_indexer_at_least_n_items",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_get_indexer_at_least_n_items` in `TestFormatting` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestFormatting.test_get_indexer_at_least_n_items"
+  },
+  {
+    "class": "TestDataTreeTruncatesNodes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_formatting_html.py",
+    "line_range": "L311-L329",
+    "method": "test_many_nodes",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_many_nodes` in `TestDataTreeTruncatesNodes` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataTreeTruncatesNodes.test_many_nodes"
+  },
+  {
+    "class": "TestDataArrayGroupBy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L1278-L1293",
+    "method": "setup",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setup` in `TestDataArrayGroupBy` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayGroupBy.setup"
+  },
+  {
+    "class": "TestDataArrayResample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L1890-L1936",
+    "method": "test_resample",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_resample` in `TestDataArrayResample` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayResample.test_resample"
+  },
+  {
+    "class": "TestDatasetResample",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L2347-L2393",
+    "method": "test_resample",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_resample` in `TestDatasetResample` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatasetResample.test_resample"
+  },
+  {
+    "class": "TestSeasonGrouperAndResampler",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_groupby.py",
+    "line_range": "L3308-L3320",
+    "method": "test_season_to_month_tuple",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_season_to_month_tuple` in `TestSeasonGrouperAndResampler` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSeasonGrouperAndResampler.test_season_to_month_tuple"
+  },
+  {
+    "class": "TestIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexes.py",
+    "line_range": "L46-L47",
+    "method": "index",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `index` in `TestIndex` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIndex.index"
+  },
+  {
+    "class": "TestPandasIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexes.py",
+    "line_range": "L118-L130",
+    "method": "test_constructor",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_constructor` in `TestPandasIndex` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPandasIndex.test_constructor"
+  },
+  {
+    "class": "TestPandasMultiIndex",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexes.py",
+    "line_range": "L333-L355",
+    "method": "test_constructor",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_constructor` in `TestPandasMultiIndex` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPandasMultiIndex.test_constructor"
+  },
+  {
+    "class": "TestIndexes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexes.py",
+    "line_range": "L565-L579",
+    "method": "indexes_and_vars",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `indexes_and_vars` in `TestIndexes` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIndexes.indexes_and_vars"
+  },
+  {
+    "class": "TestIndexers",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexing.py",
+    "line_range": "L51-L54",
+    "method": "set_to_zero",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `set_to_zero` in `TestIndexers` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIndexers.set_to_zero"
+  },
+  {
+    "class": "TestLazyArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexing.py",
+    "line_range": "L307-L313",
+    "method": "test_normalize_indexer",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_normalize_indexer` in `TestLazyArray` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestLazyArray.test_normalize_indexer"
+  },
+  {
+    "class": "TestMemoryCachedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_indexing.py",
+    "line_range": "L572-L576",
+    "method": "test_wrapper",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_wrapper` in `TestMemoryCachedArray` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestMemoryCachedArray.test_wrapper"
+  },
+  {
+    "class": "TestMergeFunction",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_merge.py",
+    "line_range": "L38-L43",
+    "method": "test_merge_arrays",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_merge_arrays` in `TestMergeFunction` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestMergeFunction.test_merge_arrays"
+  },
+  {
+    "class": "TestMergeMethod",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_merge.py",
+    "line_range": "L608-L631",
+    "method": "test_merge",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_merge` in `TestMergeMethod` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestMergeMethod.test_merge"
+  },
+  {
+    "class": "TestNewDefaults",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_merge.py",
+    "line_range": "L801-L810",
+    "method": "test_merge_datasets_false_warning",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_merge_datasets_false_warning` in `TestNewDefaults` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNewDefaults.test_merge_datasets_false_warning"
+  },
+  {
+    "class": "TestMergeDataTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_merge.py",
+    "line_range": "L874-L881",
+    "method": "test_mixed",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_mixed` in `TestMergeDataTree` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestMergeDataTree.test_mixed"
+  },
+  {
+    "class": "NamedArraySubclassobjects",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_namedarray.py",
+    "line_range": "L126-L128",
+    "method": "target",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `target` in `NamedArraySubclassobjects` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "NamedArraySubclassobjects.target"
+  },
+  {
+    "class": "TestNamedArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_namedarray.py",
+    "line_range": "L184-L185",
+    "method": "cls",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `cls` in `TestNamedArray` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNamedArray.cls"
+  },
+  {
+    "class": "TestAttrRetention",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_options.py",
+    "line_range": "L110-L130",
+    "method": "test_dataset_attr_retention",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_dataset_attr_retention` in `TestAttrRetention` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAttrRetention.test_dataset_attr_retention"
+  },
+  {
+    "class": "TestDataFrameToXArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_pandas_to_xarray.py",
+    "line_range": "L113-L125",
+    "method": "df",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `df` in `TestDataFrameToXArray` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataFrameToXArray.df"
+  },
+  {
+    "class": "DummyChunkManager",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_parallelcompat.py",
+    "line_range": "L65-L66",
+    "method": "is_chunked_array",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `is_chunked_array` in `DummyChunkManager` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "DummyChunkManager.is_chunked_array"
+  },
+  {
+    "class": "TestGetChunkManager",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_parallelcompat.py",
+    "line_range": "L153-L155",
+    "method": "test_get_chunkmanger",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_get_chunkmanger` in `TestGetChunkManager` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestGetChunkManager.test_get_chunkmanger"
+  },
+  {
+    "class": "TestGetChunkedArrayType",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_parallelcompat.py",
+    "line_range": "L203-L207",
+    "method": "test_detect_chunked_arrays",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_detect_chunked_arrays` in `TestGetChunkedArrayType` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestGetChunkedArrayType.test_detect_chunked_arrays"
+  },
+  {
+    "class": "PlotTestCase",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L151-L154",
+    "method": "setup",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setup` in `PlotTestCase` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "PlotTestCase.setup"
+  },
+  {
+    "class": "TestPlot",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L183-L184",
+    "method": "setup_array",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setup_array` in `TestPlot` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPlot.setup_array"
+  },
+  {
+    "class": "TestPlot1D",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L757-L760",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestPlot1D` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPlot1D.setUp"
+  },
+  {
+    "class": "TestPlotStep",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L848-L849",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestPlotStep` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPlotStep.setUp"
+  },
+  {
+    "class": "TestPlotHistogram",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L914-L915",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestPlotHistogram` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPlotHistogram.setUp"
+  },
+  {
+    "class": "TestDetermineCmapParams",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L962-L963",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestDetermineCmapParams` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDetermineCmapParams.setUp"
+  },
+  {
+    "class": "TestDiscreteColorMap",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L1174-L1184",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestDiscreteColorMap` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDiscreteColorMap.setUp"
+  },
+  {
+    "class": "Common2dMixin",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L1293-L1316",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `Common2dMixin` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Common2dMixin.setUp"
+  },
+  {
+    "class": "TestContourf",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L1756-L1759",
+    "method": "test_contourf_called",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_contourf_called` in `TestContourf` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestContourf.test_contourf_called"
+  },
+  {
+    "class": "TestContour",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L1822-L1838",
+    "method": "test_colors",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_colors` in `TestContour` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestContour.test_colors"
+  },
+  {
+    "class": "TestPcolormesh",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L1890-L1892",
+    "method": "test_primitive_artist_returned",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_primitive_artist_returned` in `TestPcolormesh` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPcolormesh.test_primitive_artist_returned"
+  },
+  {
+    "class": "TestImshow",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L1976-L1986",
+    "method": "test_dates_are_concise",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_dates_are_concise` in `TestImshow` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestImshow.test_dates_are_concise"
+  },
+  {
+    "class": "TestSurface",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L2141-L2151",
+    "method": "test_dates_are_concise",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_dates_are_concise` in `TestSurface` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSurface.test_dates_are_concise"
+  },
+  {
+    "class": "TestFacetGrid",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L2236-L2239",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestFacetGrid` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestFacetGrid.setUp"
+  },
+  {
+    "class": "TestFacetedLinePlots",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L2579-L2591",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestFacetedLinePlots` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestFacetedLinePlots.setUp"
+  },
+  {
+    "class": "TestDatasetQuiverPlots",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L2662-L2679",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestDatasetQuiverPlots` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatasetQuiverPlots.setUp"
+  },
+  {
+    "class": "TestDatasetScatterPlots",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L2800-L2817",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestDatasetScatterPlots` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatasetScatterPlots.setUp"
+  },
+  {
+    "class": "TestDatetimePlot",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L3001-L3010",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestDatetimePlot` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatetimePlot.setUp"
+  },
+  {
+    "class": "TestCFDatetimePlot",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L3059-L3072",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestCFDatetimePlot` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestCFDatetimePlot.setUp"
+  },
+  {
+    "class": "TestAxesKwargs",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_plot.py",
+    "line_range": "L3110-L3122",
+    "method": "data_array",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `data_array` in `TestAxesKwargs` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAxesKwargs.data_array"
+  },
+  {
+    "class": "TestDataArrayRolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_rolling.py",
+    "line_range": "L56-L69",
+    "method": "test_rolling_iter",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_rolling_iter` in `TestDataArrayRolling` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArrayRolling.test_rolling_iter"
+  },
+  {
+    "class": "TestDatasetRolling",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_rolling.py",
+    "line_range": "L537-L601",
+    "method": "test_rolling_keep_attrs",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_rolling_keep_attrs` in `TestDatasetRolling` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDatasetRolling.test_rolling_keep_attrs"
+  },
+  {
+    "class": "TestSparseVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_sparse.py",
+    "line_range": "L277-L279",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestSparseVariable` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSparseVariable.setUp"
+  },
+  {
+    "class": "TestSparseDataArrayAndDataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_sparse.py",
+    "line_range": "L577-L585",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestSparseDataArrayAndDataset` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSparseDataArrayAndDataset.setUp"
+  },
+  {
+    "class": "TestVariablesStrategy",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_strategies.py",
+    "line_range": "L104-L105",
+    "method": "test_given_nothing",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_given_nothing` in `TestVariablesStrategy` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariablesStrategy.test_given_nothing"
+  },
+  {
+    "class": "TestFamilyTree",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_treenode.py",
+    "line_range": "L18-L21",
+    "method": "test_lonely",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_lonely` in `TestFamilyTree` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestFamilyTree.test_lonely"
+  },
+  {
+    "class": "TestSetNodes",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_treenode.py",
+    "line_range": "L198-L206",
+    "method": "test_set_child_node",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_set_child_node` in `TestSetNodes` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestSetNodes.test_set_child_node"
+  },
+  {
+    "class": "TestAncestry",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_treenode.py",
+    "line_range": "L374-L377",
+    "method": "test_parents",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_parents` in `TestAncestry` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAncestry.test_parents"
+  },
+  {
+    "class": "TestXarrayUfuncs",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_ufuncs.py",
+    "line_range": "L204-L208",
+    "method": "setUp",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setUp` in `TestXarrayUfuncs` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestXarrayUfuncs.setUp"
+  },
+  {
+    "class": "TestVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_units.py",
+    "line_range": "L1544-L1559",
+    "method": "test_aggregation",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_aggregation` in `TestVariable` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariable.test_aggregation"
+  },
+  {
+    "class": "TestDataArray",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_units.py",
+    "line_range": "L2303-L2324",
+    "method": "test_init",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_init` in `TestDataArray` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataArray.test_init"
+  },
+  {
+    "class": "TestDataset",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_units.py",
+    "line_range": "L4000-L4051",
+    "method": "test_init",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_init` in `TestDataset` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDataset.test_init"
+  },
+  {
+    "class": "TestPlots",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_units.py",
+    "line_range": "L5679-L5689",
+    "method": "test_units_in_line_plot_labels",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_units_in_line_plot_labels` in `TestPlots` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestPlots.test_units_in_line_plot_labels"
+  },
+  {
+    "class": "TestDictionaries",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_utils.py",
+    "line_range": "L70-L73",
+    "method": "setup",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `setup` in `TestDictionaries` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestDictionaries.setup"
+  },
+  {
+    "class": "Test_is_uniform_and_sorted",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_utils.py",
+    "line_range": "L199-L200",
+    "method": "test_sorted_uniform",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_sorted_uniform` in `Test_is_uniform_and_sorted` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "Test_is_uniform_and_sorted.test_sorted_uniform"
+  },
+  {
+    "class": "VariableSubclassobjects",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L91-L93",
+    "method": "target",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `target` in `VariableSubclassobjects` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "VariableSubclassobjects.target"
+  },
+  {
+    "class": "TestVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L1064-L1065",
+    "method": "cls",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `cls` in `TestVariable` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariable.cls"
+  },
+  {
+    "class": "TestVariableWithDask",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L2414-L2415",
+    "method": "cls",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `cls` in `TestVariableWithDask` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestVariableWithDask.cls"
+  },
+  {
+    "class": "TestIndexVariable",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L2563-L2564",
+    "method": "cls",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `cls` in `TestIndexVariable` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestIndexVariable.cls"
+  },
+  {
+    "class": "TestAsCompatibleData",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L2732-L2741",
+    "method": "test_unchanged_types",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_unchanged_types` in `TestAsCompatibleData` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestAsCompatibleData.test_unchanged_types"
+  },
+  {
+    "class": "TestNumpyCoercion",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/xarray/xarray/tests/test_variable.py",
+    "line_range": "L3086-L3090",
+    "method": "test_from_numpy",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_from_numpy` in `TestNumpyCoercion` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
+    "symbol_name": "TestNumpyCoercion.test_from_numpy"
+  }
+]

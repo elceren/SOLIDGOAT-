@@ -1,11 +1,13 @@
 import subprocess
 import sys
 from pathlib import Path
-from typing import Tuple
+from typing import List, Tuple
 
 
-def run_tests(repository_path: Path) -> Tuple[bool, str]:
-    command = [sys.executable, "-m", "pytest"]
+def run_tests(repository_path: Path, targets: List[str] | None = None) -> Tuple[bool, str]:
+    command = [sys.executable, "-m", "pytest", "-o", "addopts="]
+    if targets:
+        command.extend(targets)
     completed = subprocess.run(
         command,
         cwd=repository_path,
