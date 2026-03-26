@@ -1,0 +1,58 @@
+[
+  {
+    "class": "ModuleLevel",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/solid_framework/core/llm.py",
+    "method": "call_llm",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `call_llm` in `ModuleLevel` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities."
+  },
+  {
+    "class": "ModuleLevel",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/solid_framework/core/refactor.py",
+    "method": "apply_refactor",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `apply_refactor` in `ModuleLevel` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities."
+  },
+  {
+    "class": "IssueRegistry",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/solid_framework/core/registry.py",
+    "method": "__init__",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `__init__` in `IssueRegistry` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities."
+  },
+  {
+    "class": "ModuleLevel",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/solid_framework/main.py",
+    "method": "main",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `main` in `ModuleLevel` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities."
+  },
+  {
+    "class": "ModuleLevel",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/solid_framework/tests/test_pipeline_smoke.py",
+    "method": "test_registry_prevents_duplicates",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `test_registry_prevents_duplicates` in `ModuleLevel` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities."
+  },
+  {
+    "class": "IssueRegistry",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/solid_framework/core/registry.py",
+    "method": "issue_id",
+    "principle": "SRP",
+    "reasoning": "Mock LLM flagged `issue_id` in `IssueRegistry` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities."
+  },
+  {
+    "class": "IssueRegistry",
+    "confidence": 0.85,
+    "file": "/Users/elsteel/solid_framework/core/registry.py",
+    "method": "_load",
+    "principle": "OCP",
+    "reasoning": "Mock LLM flagged `_load` in `IssueRegistry` as a potential OCP violation because the analyzed unit appears to mix multiple responsibilities."
+  }
+]
