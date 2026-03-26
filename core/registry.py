@@ -1,5 +1,11 @@
 # Mock refactor applied for OCP on IssueRegistry._load
 # Mock refactor applied for SRP on IssueRegistry.issue_id
+# Mock refactor applied for OCP on IssueRegistry._load
+# Mock refactor applied for SRP on IssueRegistry.issue_id
+# Mock refactor applied for OCP on IssueRegistry._load
+# Mock refactor applied for SRP on IssueRegistry.issue_id
+# Mock refactor applied for OCP on IssueRegistry._load
+# Mock refactor applied for SRP on IssueRegistry.issue_id
 # Mock refactor applied for SRP on IssueRegistry.__init__
 import json
 from pathlib import Path
@@ -24,15 +30,29 @@ class IssueRegistry:
             return []
 
         if isinstance(data, list):
-            return data
+            return [self._normalize_issue(issue) for issue in data if isinstance(issue, dict)]
         return []
 
     @staticmethod
-    def issue_id(issue: Dict[str, object]) -> Tuple[str, str, str]:
+    def _normalize_issue(issue: Dict[str, object]) -> Dict[str, object]:
+        normalized = dict(issue)
+        class_name = str(normalized.get("class", "ModuleLevel"))
+        method_name = str(normalized.get("method", "unknown_method"))
+        normalized.setdefault(
+            "symbol_name",
+            f"{class_name}.{method_name}" if class_name != "ModuleLevel" else method_name,
+        )
+        normalized.setdefault("line_range", "L1-L1")
+        return normalized
+
+    @staticmethod
+    def issue_id(issue: Dict[str, object]) -> Tuple[str, str, str, str]:
+        normalized = IssueRegistry._normalize_issue(issue)
         return (
-            str(issue.get("principle", "")),
-            str(issue.get("file", "")),
-            str(issue.get("method", "")),
+            str(normalized.get("principle", "")),
+            str(normalized.get("file", "")),
+            str(normalized.get("symbol_name", "")),
+            str(normalized.get("line_range", "")),
         )
 
     def is_duplicate(self, issue: Dict[str, object]) -> bool:
@@ -43,7 +63,7 @@ class IssueRegistry:
         if self.is_duplicate(issue):
             return False
 
-        self._issues.append(issue)
+        self._issues.append(self._normalize_issue(issue))
         self.registry_path.write_text(
             json.dumps(self._issues, indent=2, sort_keys=True),
             encoding="utf-8",

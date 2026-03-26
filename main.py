@@ -27,7 +27,8 @@ def main() -> int:
         status = "duplicate" if duplicate else "new"
         log(
             f"Issue {index}: {issue['principle']} in {issue['file']} "
-            f"({issue['class']}.{issue['method']}) -> {status}"
+            f"({issue.get('symbol_name', issue['class'] + '.' + issue['method'])}, "
+            f"{issue.get('line_range', 'L1-L1')}) -> {status}"
         )
 
         if duplicate:

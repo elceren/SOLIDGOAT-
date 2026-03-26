@@ -1,23 +1,33 @@
 import ast
 from pathlib import Path
-from typing import Dict, Iterable, List
+from typing import Dict, Iterable, List, Union
 
 from config import IGNORED_DIRECTORIES, SUPPORTED_EXTENSIONS
 from core.llm import call_llm
 from utils.file_loader import read_text_file
 
 
-IssueCandidate = Dict[str, str]
+IssueValue = Union[str, int]
+IssueCandidate = Dict[str, IssueValue]
 
 
 def _should_skip(path: Path) -> bool:
     return any(part in IGNORED_DIRECTORIES for part in path.parts)
 
 
+def _sanitize_source(source: str) -> str:
+    lines = source.splitlines()
+    while lines and lines[0].startswith("# Mock refactor applied"):
+        lines.pop(0)
+    return "\n".join(lines)
+
+
 def _build_prompt(
     file_path: Path,
     class_name: str,
     method_name: str,
+    symbol_name: str,
+    line_range: str,
     principle: str,
     source: str,
 ) -> str:
@@ -27,6 +37,8 @@ def _build_prompt(
             f"file: {file_path}",
             f"class: {class_name}",
             f"method: {method_name}",
+            f"symbol_name: {symbol_name}",
+            f"line_range: {line_range}",
             f"principle: {principle}",
             "source:",
             source,
@@ -59,11 +71,19 @@ def _record_issue(
     file_path: Path,
     class_name: str,
     method_name: str,
+    symbol_name: str,
+    line_range: str,
     principle: str,
     source: str,
 ) -> None:
-    prompt = _build_prompt(file_path, class_name, method_name, principle, source)
+    prompt = _build_prompt(file_path, class_name, method_name, symbol_name, line_range, principle, source)
     issues.append(call_llm(prompt))
+
+
+def _line_range(node: ast.AST) -> str:
+    start = getattr(node, "lineno", 1)
+    end = getattr(node, "end_lineno", start)
+    return f"L{start}-L{end}"
 
 
 def _detect_srp(tree: ast.AST) -> List[IssueCandidate]:
@@ -73,7 +93,16 @@ def _detect_srp(tree: ast.AST) -> List[IssueCandidate]:
         if isinstance(node, ast.ClassDef):
             public_methods = _public_methods(node)
             if len(public_methods) >= 4:
-                candidates.append({"class": node.name, "method": public_methods[0].name, "principle": "SRP"})
+                method = public_methods[0]
+                candidates.append(
+                    {
+                        "class": node.name,
+                        "method": method.name,
+                        "symbol_name": f"{node.name}.{method.name}",
+                        "line_range": _line_range(method),
+                        "principle": "SRP",
+                    }
+                )
 
     return candidates
 
@@ -88,7 +117,15 @@ def _detect_ocp(tree: ast.AST) -> List[IssueCandidate]:
         for method in [child for child in node.body if isinstance(child, ast.FunctionDef)]:
             conditional_count = sum(1 for _ in _iter_conditionals(method))
             if conditional_count >= 2:
-                candidates.append({"class": node.name, "method": method.name, "principle": "OCP"})
+                candidates.append(
+                    {
+                        "class": node.name,
+                        "method": method.name,
+                        "symbol_name": f"{node.name}.{method.name}",
+                        "line_range": _line_range(method),
+                        "principle": "OCP",
+                    }
+                )
                 break
 
     return candidates
@@ -111,7 +148,15 @@ def _detect_lsp(tree: ast.AST) -> List[IssueCandidate]:
                 )
                 for statement in ast.walk(method)
             ):
-                candidates.append({"class": node.name, "method": method.name, "principle": "LSP"})
+                candidates.append(
+                    {
+                        "class": node.name,
+                        "method": method.name,
+                        "symbol_name": f"{node.name}.{method.name}",
+                        "line_range": _line_range(method),
+                        "principle": "LSP",
+                    }
+                )
                 break
 
     return candidates
@@ -140,7 +185,16 @@ def _detect_isp(tree: ast.AST) -> List[IssueCandidate]:
                 placeholder_methods += 1
 
         if len(public_methods) >= 5 and placeholder_methods >= 2:
-            candidates.append({"class": node.name, "method": public_methods[0].name, "principle": "ISP"})
+            method = public_methods[0]
+            candidates.append(
+                {
+                    "class": node.name,
+                    "method": method.name,
+                    "symbol_name": f"{node.name}.{method.name}",
+                    "line_range": _line_range(method),
+                    "principle": "ISP",
+                }
+            )
 
     return candidates
 
@@ -159,7 +213,15 @@ def _detect_dip(tree: ast.AST) -> List[IssueCandidate]:
                     concrete_instantiations += 1
 
             if concrete_instantiations >= 2:
-                candidates.append({"class": node.name, "method": method.name, "principle": "DIP"})
+                candidates.append(
+                    {
+                        "class": node.name,
+                        "method": method.name,
+                        "symbol_name": f"{node.name}.{method.name}",
+                        "line_range": _line_range(method),
+                        "principle": "DIP",
+                    }
+                )
                 break
 
     return candidates
@@ -190,8 +252,9 @@ def detect_violations(repository_path: Path) -> List[Dict[str, object]]:
         if source is None:
             continue
 
+        analysis_source = _sanitize_source(source)
         try:
-            tree = ast.parse(source)
+            tree = ast.parse(analysis_source)
         except SyntaxError:
             continue
 
@@ -199,10 +262,12 @@ def detect_violations(repository_path: Path) -> List[Dict[str, object]]:
             _record_issue(
                 issues,
                 file_path=file_path,
-                class_name=candidate["class"],
-                method_name=candidate["method"],
-                principle=candidate["principle"],
-                source=source,
+                class_name=str(candidate["class"]),
+                method_name=str(candidate["method"]),
+                symbol_name=str(candidate["symbol_name"]),
+                line_range=str(candidate["line_range"]),
+                principle=str(candidate["principle"]),
+                source=analysis_source,
             )
 
     return issues

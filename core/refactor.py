@@ -13,6 +13,8 @@ def _build_refactor_prompt(issue: Dict[str, object], source: str) -> str:
             f"file: {issue['file']}",
             f"class: {issue['class']}",
             f"method: {issue['method']}",
+            f"symbol_name: {issue.get('symbol_name', issue['method'])}",
+            f"line_range: {issue.get('line_range', 'L1-L1')}",
             f"principle: {issue['principle']}",
             "source:",
             source,
