@@ -4,11 +4,9 @@ from typing import Dict, Iterable, List, Union
 
 from config import IGNORED_DIRECTORIES, SUPPORTED_EXTENSIONS
 from core.llm import call_llm_batch
+from core.detector_srp import _detect_srp
+from core.detector_utils import _public_methods, _line_range, IssueValue, IssueCandidate
 from utils.file_loader import read_text_file
-
-
-IssueValue = Union[str, int]
-IssueCandidate = Dict[str, IssueValue]
 
 
 def _should_skip(path: Path) -> bool:
@@ -22,15 +20,6 @@ def _sanitize_source(source: str) -> str:
     return "\n".join(lines)
 
 
-
-def _public_methods(node: ast.ClassDef) -> List[ast.FunctionDef]:
-    return [
-        child
-        for child in node.body
-        if isinstance(child, ast.FunctionDef) and not child.name.startswith("_")
-    ]
-
-
 def _iter_calls(node: ast.AST) -> Iterable[ast.Call]:
     for child in ast.walk(node):
         if isinstance(child, ast.Call):
@@ -41,34 +30,6 @@ def _iter_conditionals(node: ast.AST) -> Iterable[ast.If]:
     for child in ast.walk(node):
         if isinstance(child, ast.If):
             yield child
-
-
-
-def _line_range(node: ast.AST) -> str:
-    start = getattr(node, "lineno", 1)
-    end = getattr(node, "end_lineno", start)
-    return f"L{start}-L{end}"
-
-
-def _detect_srp(tree: ast.AST) -> List[IssueCandidate]:
-    candidates: List[IssueCandidate] = []
-
-    for node in tree.body:
-        if isinstance(node, ast.ClassDef):
-            public_methods = _public_methods(node)
-            if len(public_methods) >= 6:
-                method = public_methods[0]
-                candidates.append(
-                    {
-                        "class": node.name,
-                        "method": method.name,
-                        "symbol_name": f"{node.name}.{method.name}",
-                        "line_range": _line_range(method),
-                        "principle": "SRP",
-                    }
-                )
-
-    return candidates
 
 
 def _detect_ocp(tree: ast.AST) -> List[IssueCandidate]:
@@ -221,6 +182,9 @@ def detect_violations(
     for root in roots:
         for file_path in sorted(root.rglob("*")):
             if file_path.suffix not in SUPPORTED_EXTENSIONS or _should_skip(file_path):
+                continue
+            # test file skip
+            if "test" in file_path.parts or file_path.name.startswith("test_"):
                 continue
 
             source = read_text_file(file_path)

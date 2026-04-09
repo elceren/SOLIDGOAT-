@@ -11,7 +11,7 @@ from google import genai
 load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 _MODEL_NAME = "gemini-2.5-flash"
-_MAX_RETRIES = 3
+_MAX_RETRIES = 5
 
 _REQUIRED_FIELDS = {"file", "class", "method", "principle", "reasoning", "confidence"}
 
@@ -131,10 +131,14 @@ def call_llm(prompt: str) -> Dict[str, object]:
             elapsed = time.monotonic() - t_start
             last_error = str(exc)
             retry_secs = _extract_retry_seconds(last_error)
-            sleep_secs = retry_secs if retry_secs > 0 else 2 ** attempt
+            is_rate_limit = "429" in last_error or "RESOURCE_EXHAUSTED" in last_error
+            is_unavailable = "503" in last_error or "UNAVAILABLE" in last_error
+            sleep_secs = retry_secs if retry_secs > 0 else (30 if is_unavailable else 2 ** attempt)
             print(f"  [LLM] API error after {elapsed:.2f}s — {type(exc).__name__}", flush=True)
-            if "429" in last_error or "RESOURCE_EXHAUSTED" in last_error:
+            if is_rate_limit:
                 print(f"  [LLM] rate limited — waiting {sleep_secs:.0f}s before retry ...", flush=True)
+            if is_unavailable:
+                print(f"  [LLM] server overloaded — waiting {sleep_secs:.0f}s before retry ...", flush=True)
             if attempt < _MAX_RETRIES - 1:
                 time.sleep(sleep_secs)
 
@@ -153,14 +157,21 @@ def call_llm_batch(
     client = _get_client()
 
     candidate_lines = "\n".join(
-        f"  {i+1}. class={c['class']} method={c['method']} symbol={c['symbol_name']} lines={c['line_range']} principle={c['principle']}"
+        (
+            f"  {i+1}. class={c['class']} method={c['method']} "
+            f"symbol={c['symbol_name']} lines={c['line_range']} principle={c['principle']}"
+            + (
+                f"\n      heuristic context: {c['heuristic_summary']}"
+                if c.get('heuristic_summary') else ""
+            )
+        )
         for i, c in enumerate(candidates)
     )
     base_prompt = (
         f"Analyze this Python file for SOLID design principle violations.\n"
         f"file: {file_path}\n\n"
         f"Candidates to evaluate ({len(candidates)} total):\n{candidate_lines}\n\n"
-        f"source:\n{source}\n\n"
+        f"source (first 200 lines):\n{chr(10).join(source.splitlines()[:200])}\n\n"
         f"{_JSON_SCHEMA_BATCH}"
     )
 
@@ -214,10 +225,14 @@ def call_llm_batch(
             elapsed = time.monotonic() - t_start
             last_error = str(exc)
             retry_secs = _extract_retry_seconds(last_error)
-            sleep_secs = retry_secs if retry_secs > 0 else 2 ** attempt
+            is_rate_limit = "429" in last_error or "RESOURCE_EXHAUSTED" in last_error
+            is_unavailable = "503" in last_error or "UNAVAILABLE" in last_error
+            sleep_secs = retry_secs if retry_secs > 0 else (30 if is_unavailable else 2 ** attempt)
             print(f"  [LLM] API error after {elapsed:.2f}s — {type(exc).__name__}", flush=True)
-            if "429" in last_error or "RESOURCE_EXHAUSTED" in last_error:
+            if is_rate_limit:
                 print(f"  [LLM] rate limited — waiting {sleep_secs:.0f}s before retry ...", flush=True)
+            if is_unavailable:
+                print(f"  [LLM] server overloaded — waiting {sleep_secs:.0f}s before retry ...", flush=True)
             if attempt < _MAX_RETRIES - 1:
                 time.sleep(sleep_secs)
 

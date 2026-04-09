@@ -38,5 +38,25 @@
     "principle": "SRP",
     "reasoning": "Mock LLM flagged `encode` in `AbstractWritableDataStore` as a potential SRP violation because the analyzed unit appears to mix multiple responsibilities.",
     "symbol_name": "AbstractWritableDataStore.encode"
+  },
+  {
+    "class": "H5NetCDFStore",
+    "confidence": 0.0,
+    "file": "C:\\Users\\rehbe\\xarray\\xarray\\backends\\h5netcdf_.py",
+    "line_range": "L110-L455",
+    "method": "get_child_store",
+    "principle": "SRP",
+    "reasoning": "The `H5NetCDFStore` class is responsible for managing access to and interactions with an h5netcdf data store. This responsibility inherently includes both navigating the hierarchical structure of the store (like creating subgroups via `get_child_store`) and providing access to its contents (variables, attributes, dimensions). These are closely related facets of a single logical responsibility: providing a programmatic interface to the netCDF/HDF5 data model. The `get_child_store` method specifically deals with the structural aspect of this core responsibility, not introducing a new, unrelated reason for the class to change. The `is_remote` attribute and related logic primarily concern *how* the underlying file is opened, rather than adding a separate responsibility for complex network management or data processing.",
+    "symbol_name": "H5NetCDFStore.get_child_store"
+  },
+  {
+    "class": "NetCDF4DataStore",
+    "confidence": 0.9,
+    "file": "C:\\Users\\rehbe\\xarray\\xarray\\backends\\netCDF4_.py",
+    "line_range": "L392-L677",
+    "method": "get_child_store",
+    "principle": "SRP",
+    "reasoning": "The `NetCDF4DataStore` class appears to have multiple responsibilities. It is responsible for managing the underlying NetCDF4 file/resource connection (e.g., via methods like `_acquire`, `close`, `lock`), for navigating the hierarchical group structure within the file (represented by `get_child_store`, `get_parent_dimensions`), and for retrieving specific data and metadata (like variables, attributes, and dimensions) from the currently accessed group (via `get_variables`, `get_attrs`, `get_dimensions`, `get_encoding`, `open_store_variable`). The `get_child_store` method contributes to the responsibility of managing and navigating the hierarchical structure, which is distinct from the responsibility of reading data and metadata. Changes to how NetCDF4 groups are managed/accessed would affect `get_child_store`, while changes to how variables/attributes are read would affect other methods. Combining these distinct concerns violates the Single Responsibility Principle.",
+    "symbol_name": "NetCDF4DataStore.get_child_store"
   }
 ]
